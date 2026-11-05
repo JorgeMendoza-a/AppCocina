@@ -8,6 +8,7 @@ import '../widgets/recipe_widgets.dart';
 import 'about_screen.dart';
 
 enum QuickFilter {
+  manabi('🌴 Manabí'),
   rapido('Rápido (≤30 min)'),
   vegetariano('Vegetariano'),
   sinGluten('Sin gluten'),
@@ -19,6 +20,7 @@ enum QuickFilter {
   final String label;
 
   bool matches(Recipe r) => switch (this) {
+    QuickFilter.manabi => r.origin.contains('Manabí'),
     QuickFilter.rapido => r.isQuick,
     QuickFilter.vegetariano => r.isVegetarian,
     QuickFilter.sinGluten => r.isGlutenFree,

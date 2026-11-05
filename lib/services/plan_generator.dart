@@ -50,7 +50,56 @@ class PlanGenerator {
         .toList();
   }
 
+  /// Genera el menú de la semana. Si la combinación queda lejos de la
+  /// referencia de calorías (o algún día por debajo del mínimo), prueba
+  /// otras combinaciones derivadas de la misma semilla, así el resultado
+  /// sigue siendo siempre el mismo para una semilla dada.
   WeeklyPlan generate(DietGoal goal, {required int seed, int people = 1}) {
+    WeeklyPlan? best;
+    var bestScore = double.infinity;
+    for (var attempt = 0; attempt < 25; attempt++) {
+      final plan = _generateOnce(
+        goal,
+        seed: seed + attempt * 7919,
+        people: people,
+      );
+      final score = _distance(goal, plan);
+      if (score < bestScore) {
+        best = plan;
+        bestScore = score;
+      }
+      if (score == 0) break;
+    }
+    final chosen = best!;
+    return WeeklyPlan(
+      goal: goal,
+      days: chosen.days,
+      seed: seed,
+      people: people,
+      portionsPerPerson: chosen.portionsPerPerson,
+    );
+  }
+
+  /// 0 si el plan cumple la meta; mayor mientras más se aleje.
+  static double _distance(DietGoal goal, WeeklyPlan plan) {
+    final target = goal.dailyKcalTarget;
+    final low = target * 0.85;
+    final high = goal.maxKcalPerMeal.isNotEmpty ? target * 1.08 : target * 1.15;
+    var score = 0.0;
+    final avg = plan.averageKcal;
+    if (avg < low) score += low - avg;
+    if (avg > high) score += avg - high;
+    final minDaily = goal.minDailyKcal;
+    if (minDaily != null) {
+      for (final day in plan.days) {
+        final kcal = plan.dayKcal(day);
+        if (kcal < minDaily) score += minDaily - kcal;
+      }
+    }
+    return score;
+  }
+
+  WeeklyPlan _generateOnce(DietGoal goal, {required int seed, int people = 1}) {
     final random = Random(seed);
     final pools = {
       for (final meal in MealType.values) meal: candidates(goal, meal),

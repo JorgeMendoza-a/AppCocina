@@ -32,6 +32,11 @@ void main() {
       expect(repo.recipes.where((r) => r.image != null).length, 29);
     });
 
+    test('hay al menos 10 recetas manabas', () {
+      final manabas = repo.recipes.where((r) => r.origin.contains('Manabí'));
+      expect(manabas.length, greaterThanOrEqualTo(10));
+    });
+
     test('ids únicos e ingredientes conocidos', () {
       final ids = repo.recipes.map((r) => r.id).toList();
       expect(ids.toSet().length, ids.length);
@@ -251,6 +256,12 @@ void main() {
       expect(actionForStep('Sofríe la cebolla y el ajo').label, 'Sofreír');
       expect(actionForStep('Sirve con cilantro picado').label, 'Cortar');
       expect(actionForStep('Sirve caliente').label, 'Servir');
+      expect(
+        actionForStep('En cada hoja pon arroz. Envuelve y amarra.').label,
+        'Envolver',
+      );
+      expect(actionForStep('Ralla los verdes crudos').label, 'Cortar');
+      expect(actionForStep('Forma bolitas y rellénalas').label, 'Mezclar');
     });
 
     test('todas las recetas tienen una acción para cada paso', () {

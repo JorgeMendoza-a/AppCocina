@@ -16,13 +16,17 @@ class StepAction {
 }
 
 const _actions = <(List<String>, StepAction)>[
+  (
+    ['envuelve', 'hojas de platano', 'hoja de platano'],
+    StepAction('🍃', 'Envolver', AppColors.mint),
+  ),
   (['licua', 'licuadora'], StepAction('🥤', 'Licuar', AppColors.lavender)),
   (
     ['horno', 'hornea', 'asa los'],
     StepAction('🔥', 'Hornear', AppColors.peach),
   ),
   (
-    ['corta', 'pica', 'pela', 'rodajas', 'en cubos'],
+    ['corta', 'pica', 'pela', 'rodajas', 'en cubos', 'ralla ', 'rallala'],
     StepAction('🔪', 'Cortar', AppColors.mint),
   ),
   (
@@ -38,7 +42,18 @@ const _actions = <(List<String>, StepAction)>[
     StepAction('🍲', 'Cocinar', AppColors.peach),
   ),
   (
-    ['bate', 'mezcla', 'maja', 'aplasta', 'adoba', 'unta', 'arma', 'rellena'],
+    [
+      'bate',
+      'mezcla',
+      'maja',
+      'aplasta',
+      'adoba',
+      'unta',
+      'arma',
+      'rellena',
+      'forma',
+      'amasa',
+    ],
     StepAction('🥣', 'Mezclar', AppColors.butter),
   ),
   (

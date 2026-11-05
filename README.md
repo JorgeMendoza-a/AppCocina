@@ -9,7 +9,7 @@ recopila datos personales.
 
 | Pantalla | Qué hace |
 |---|---|
-| **Recetas** | 35 recetas, 29 con foto, (muchas ecuatorianas y latinas). Búsqueda sin importar tildes, filtros por comida, rápidas, vegetarianas, sin gluten, económicas, altas en proteína y ligeras. |
+| **Recetas** | 45 recetas (10 manabas: viche, corviches, tonga, bollos, cazuela, sango, muchines y más), (muchas ecuatorianas y latinas). Búsqueda sin importar tildes, filtros por comida, platos de Manabí, rápidas, vegetarianas, sin gluten, económicas, altas en proteína y ligeras. |
 | **Detalle de receta** | Ajuste de porciones (las cantidades se recalculan), sustitutos de ingredientes, información nutricional aproximada y botón para mandar los ingredientes a la lista de compras. |
 | **Modo cocina** | Un paso a la vez con letra grande, temporizadores integrados y pantalla siempre encendida. |
 | **¿Qué cocino?** | Marcas los ingredientes que tienes y te dice qué puedes preparar ya y qué te falta, que puedes mandar a la lista con un toque. |

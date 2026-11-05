@@ -19,7 +19,7 @@
   },
   {
    "id": "carne_res",
-   "name": "Carne de res (lomo)",
+   "name": "Carne de res",
    "category": "Carnes y mariscos",
    "emoji": "🥩",
    "basic": false,
@@ -413,6 +413,38 @@
    "category": "Condimentos y otros",
    "emoji": "🌿",
    "basic": false
+  },
+  {
+   "id": "carne_molida",
+   "name": "Carne molida",
+   "category": "Carnes y mariscos",
+   "emoji": "🥩",
+   "basic": false,
+   "substitute": "Pollo molido"
+  },
+  {
+   "id": "hoja_platano",
+   "name": "Hojas de plátano",
+   "category": "Verduras",
+   "emoji": "🍃",
+   "basic": false,
+   "substitute": "Papel aluminio"
+  },
+  {
+   "id": "mani_molido",
+   "name": "Maní tostado y molido",
+   "category": "Condimentos y otros",
+   "emoji": "🥜",
+   "basic": false,
+   "substitute": "Mantequilla de maní natural, sin azúcar"
+  },
+  {
+   "id": "salprieta",
+   "name": "Salprieta",
+   "category": "Condimentos y otros",
+   "emoji": "🥜",
+   "basic": false,
+   "substitute": "Maní y maíz tostados y molidos, con achiote y cilantro"
   },
   {
    "id": "sal",
@@ -3510,6 +3542,1128 @@
     "license": "CC BY 2.0",
     "source": "https://commons.wikimedia.org/wiki/File:Fruit_salad_flanked_by_Sabre_flatware.jpg"
    }
+  },
+  {
+   "id": "viche_pescado",
+   "name": "Viche de pescado",
+   "emoji": "🍲",
+   "description": "La sopa más famosa de Manabí: pescado y mariscos en un caldo espeso de maní, con verde, choclo, yuca y zapallo.",
+   "meals": [
+    "almuerzo"
+   ],
+   "origin": "Manabí, Ecuador",
+   "minutes": 75,
+   "difficulty": "Media",
+   "servings": 6,
+   "tags": [
+    "sin_gluten"
+   ],
+   "nutrition": {
+    "kcal": 520,
+    "protein": 34,
+    "carbs": 48,
+    "fat": 22
+   },
+   "ingredients": [
+    {
+     "id": "pescado",
+     "qty": 800,
+     "unit": "g",
+     "note": "en trozos (corvina o picudo)"
+    },
+    {
+     "id": "camaron",
+     "qty": 300,
+     "unit": "g",
+     "note": "pelado"
+    },
+    {
+     "id": "mani_molido",
+     "qty": 1,
+     "unit": "taza"
+    },
+    {
+     "id": "verde",
+     "qty": 2,
+     "unit": "unidad"
+    },
+    {
+     "id": "choclo",
+     "qty": 2,
+     "unit": "unidad",
+     "note": "en trozos"
+    },
+    {
+     "id": "yuca",
+     "qty": 500,
+     "unit": "g",
+     "note": "en trozos"
+    },
+    {
+     "id": "zapallo",
+     "qty": 300,
+     "unit": "g",
+     "note": "en trozos"
+    },
+    {
+     "id": "cebolla_paitena",
+     "qty": 1,
+     "unit": "unidad"
+    },
+    {
+     "id": "pimiento",
+     "qty": 1,
+     "unit": "unidad"
+    },
+    {
+     "id": "ajo",
+     "qty": 3,
+     "unit": "diente"
+    },
+    {
+     "id": "achiote",
+     "qty": 1,
+     "unit": "cda"
+    },
+    {
+     "id": "comino",
+     "qty": 1,
+     "unit": "cdta"
+    },
+    {
+     "id": "cilantro",
+     "qty": 1,
+     "unit": "atado"
+    },
+    {
+     "id": "agua",
+     "qty": 2.5,
+     "unit": "l"
+    },
+    {
+     "id": "sal",
+     "qty": null,
+     "unit": null
+    },
+    {
+     "id": "aceite",
+     "qty": 2,
+     "unit": "cda"
+    }
+   ],
+   "steps": [
+    {
+     "text": "Haz un refrito con la cebolla, el pimiento y el ajo picados, el comino y el achiote.",
+     "timerMinutes": 5
+    },
+    {
+     "text": "Licúa el maní con 2 tazas de agua hasta que quede como una leche espesa."
+    },
+    {
+     "text": "Agrega el resto del agua, el maní licuado, la yuca, el choclo y el zapallo. Cocina moviendo de vez en cuando.",
+     "timerMinutes": 20
+    },
+    {
+     "text": "Ralla un verde y corta el otro en trozos; agrégalos a la olla para espesar el caldo.",
+     "timerMinutes": 15
+    },
+    {
+     "text": "Añade el pescado y los camarones y cocina sin mover mucho para que no se deshagan.",
+     "timerMinutes": 10
+    },
+    {
+     "text": "Ajusta la sal, termina con cilantro picado y sirve caliente."
+    }
+   ],
+   "tip": "Sírvelo con limón, ají y un poco de arroz o maduro frito, como en Manabí."
+  },
+  {
+   "id": "cazuela_pescado",
+   "name": "Cazuela de pescado",
+   "emoji": "🥘",
+   "description": "Pescado cubierto con una crema de verde y maní, dorada al horno. Un clásico de la costa manabita.",
+   "meals": [
+    "almuerzo"
+   ],
+   "origin": "Manabí, Ecuador",
+   "minutes": 60,
+   "difficulty": "Media",
+   "servings": 4,
+   "tags": [
+    "sin_gluten"
+   ],
+   "nutrition": {
+    "kcal": 560,
+    "protein": 32,
+    "carbs": 50,
+    "fat": 26
+   },
+   "ingredients": [
+    {
+     "id": "verde",
+     "qty": 4,
+     "unit": "unidad",
+     "note": "crudos y rallados"
+    },
+    {
+     "id": "mani_molido",
+     "qty": 1,
+     "unit": "taza"
+    },
+    {
+     "id": "pescado",
+     "qty": 600,
+     "unit": "g",
+     "note": "en trozos"
+    },
+    {
+     "id": "cebolla_paitena",
+     "qty": 1,
+     "unit": "unidad"
+    },
+    {
+     "id": "pimiento",
+     "qty": 1,
+     "unit": "unidad"
+    },
+    {
+     "id": "tomate",
+     "qty": 2,
+     "unit": "unidad"
+    },
+    {
+     "id": "ajo",
+     "qty": 3,
+     "unit": "diente"
+    },
+    {
+     "id": "achiote",
+     "qty": 1,
+     "unit": "cda"
+    },
+    {
+     "id": "comino",
+     "qty": 1,
+     "unit": "cdta"
+    },
+    {
+     "id": "cilantro",
+     "qty": 0.5,
+     "unit": "atado"
+    },
+    {
+     "id": "agua",
+     "qty": 4,
+     "unit": "taza"
+    },
+    {
+     "id": "sal",
+     "qty": null,
+     "unit": null
+    },
+    {
+     "id": "aceite",
+     "qty": 2,
+     "unit": "cda"
+    }
+   ],
+   "steps": [
+    {
+     "text": "Adoba el pescado con un diente de ajo machacado, comino y sal."
+    },
+    {
+     "text": "Haz un refrito con cebolla, pimiento, tomate, el resto del ajo y el achiote.",
+     "timerMinutes": 6
+    },
+    {
+     "text": "Licúa el maní con 2 tazas de agua y agrégalo al refrito."
+    },
+    {
+     "text": "Incorpora el verde rallado y el resto del agua. Mueve sin parar hasta que espese como un puré suave.",
+     "timerMinutes": 15
+    },
+    {
+     "text": "Precalienta el horno a 200 °C. Pon la mitad de la crema en una cazuela de barro o un molde, acomoda el pescado y cúbrelo con el resto."
+    },
+    {
+     "text": "Hornea hasta que la superficie esté dorada.",
+     "timerMinutes": 20
+    },
+    {
+     "text": "Termina con cilantro picado y sirve con arroz blanco."
+    }
+   ],
+   "tip": "Puedes mezclar pescado con camarón o concha para una cazuela mixta."
+  },
+  {
+   "id": "tonga_pollo",
+   "name": "Tonga de pollo",
+   "emoji": "🍃",
+   "description": "Arroz con pollo en salsa de maní y maduro, envuelto en hoja de plátano. La comida que los campesinos manabas llevaban al trabajo.",
+   "meals": [
+    "almuerzo"
+   ],
+   "origin": "Manabí, Ecuador",
+   "minutes": 70,
+   "difficulty": "Media",
+   "servings": 4,
+   "tags": [
+    "sin_gluten",
+    "economico"
+   ],
+   "nutrition": {
+    "kcal": 640,
+    "protein": 34,
+    "carbs": 72,
+    "fat": 22
+   },
+   "ingredients": [
+    {
+     "id": "pollo",
+     "qty": 1,
+     "unit": "kg",
+     "note": "en presas"
+    },
+    {
+     "id": "arroz",
+     "qty": 2,
+     "unit": "taza"
+    },
+    {
+     "id": "mani_molido",
+     "qty": 0.75,
+     "unit": "taza"
+    },
+    {
+     "id": "maduro",
+     "qty": 2,
+     "unit": "unidad",
+     "note": "en tajadas"
+    },
+    {
+     "id": "cebolla_paitena",
+     "qty": 1,
+     "unit": "unidad"
+    },
+    {
+     "id": "pimiento",
+     "qty": 1,
+     "unit": "unidad"
+    },
+    {
+     "id": "ajo",
+     "qty": 3,
+     "unit": "diente"
+    },
+    {
+     "id": "achiote",
+     "qty": 1,
+     "unit": "cda"
+    },
+    {
+     "id": "comino",
+     "qty": 1,
+     "unit": "cdta"
+    },
+    {
+     "id": "cilantro",
+     "qty": 0.5,
+     "unit": "atado"
+    },
+    {
+     "id": "hoja_platano",
+     "qty": 4,
+     "unit": "unidad"
+    },
+    {
+     "id": "agua",
+     "qty": 4,
+     "unit": "taza"
+    },
+    {
+     "id": "sal",
+     "qty": null,
+     "unit": null
+    },
+    {
+     "id": "aceite",
+     "qty": 3,
+     "unit": "cda"
+    }
+   ],
+   "steps": [
+    {
+     "text": "Dora las presas de pollo sazonadas con sal y comino en aceite con achiote.",
+     "timerMinutes": 8
+    },
+    {
+     "text": "Agrega la cebolla, el pimiento y el ajo picados y sofríe.",
+     "timerMinutes": 4
+    },
+    {
+     "text": "Licúa el maní con 2 tazas de agua, añádelo al pollo y cocina tapado hasta que la salsa espese.",
+     "timerMinutes": 25
+    },
+    {
+     "text": "Mientras tanto, cocina el arroz con el resto del agua y sal.",
+     "timerMinutes": 20
+    },
+    {
+     "text": "Fríe las tajadas de maduro hasta que estén doradas.",
+     "timerMinutes": 6
+    },
+    {
+     "text": "Pasa las hojas de plátano por el fuego o por agua caliente para que se ablanden."
+    },
+    {
+     "text": "En cada hoja pon arroz, una presa con salsa, maduro y cilantro. Envuelve y amarra."
+    },
+    {
+     "text": "Calienta las tongas tapadas en una sartén o al vapor para que tomen el aroma de la hoja.",
+     "timerMinutes": 10
+    }
+   ],
+   "tip": "Se comen directamente de la hoja. Las hojas de plátano se consiguen en mercados."
+  },
+  {
+   "id": "corviche",
+   "name": "Corviches",
+   "emoji": "🐟",
+   "description": "Masa de verde crudo y maní, rellena de pescado y frita hasta quedar crocante. El piqueo manaba por excelencia.",
+   "meals": [
+    "snack",
+    "almuerzo"
+   ],
+   "origin": "Manabí, Ecuador",
+   "minutes": 60,
+   "difficulty": "Media",
+   "servings": 6,
+   "tags": [
+    "sin_gluten"
+   ],
+   "nutrition": {
+    "kcal": 330,
+    "protein": 15,
+    "carbs": 38,
+    "fat": 14
+   },
+   "ingredients": [
+    {
+     "id": "verde",
+     "qty": 4,
+     "unit": "unidad",
+     "note": "crudos, rallados finos"
+    },
+    {
+     "id": "mani_molido",
+     "qty": 0.5,
+     "unit": "taza"
+    },
+    {
+     "id": "pescado",
+     "qty": 400,
+     "unit": "g"
+    },
+    {
+     "id": "cebolla_paitena",
+     "qty": 1,
+     "unit": "unidad"
+    },
+    {
+     "id": "pimiento",
+     "qty": 0.5,
+     "unit": "unidad"
+    },
+    {
+     "id": "tomate",
+     "qty": 1,
+     "unit": "unidad"
+    },
+    {
+     "id": "ajo",
+     "qty": 2,
+     "unit": "diente"
+    },
+    {
+     "id": "achiote",
+     "qty": 1,
+     "unit": "cdta"
+    },
+    {
+     "id": "comino",
+     "qty": 0.5,
+     "unit": "cdta"
+    },
+    {
+     "id": "cilantro",
+     "qty": 0.25,
+     "unit": "atado"
+    },
+    {
+     "id": "aceite",
+     "qty": 2,
+     "unit": "taza",
+     "note": "para freír"
+    },
+    {
+     "id": "agua",
+     "qty": null,
+     "unit": null
+    },
+    {
+     "id": "sal",
+     "qty": null,
+     "unit": null
+    }
+   ],
+   "steps": [
+    {
+     "text": "Cocina el pescado en poca agua con sal y desmenúzalo.",
+     "timerMinutes": 10
+    },
+    {
+     "text": "Haz un refrito con cebolla, pimiento, tomate, ajo y comino picados.",
+     "timerMinutes": 5
+    },
+    {
+     "text": "Mezcla la mitad del refrito con el pescado y el cilantro: ese es el relleno."
+    },
+    {
+     "text": "Ralla los verdes crudos y mézclalos con el maní, el resto del refrito, el achiote y sal. Amasa hasta que la masa no se pegue."
+    },
+    {
+     "text": "Toma una porción de masa, aplánala en la mano, pon relleno en el centro y ciérrala en forma de bote."
+    },
+    {
+     "text": "Fríe los corviches en aceite bien caliente, girándolos hasta que estén dorados.",
+     "timerMinutes": 6
+    }
+   ],
+   "tip": "Acompáñalos con curtido de cebolla con limón y salsa de maní."
+  },
+  {
+   "id": "bollo_pescado",
+   "name": "Bollo de pescado",
+   "emoji": "🍃",
+   "description": "Pescado cocido dentro de una masa de verde y maní, envuelto en hoja de plátano y cocinado al vapor.",
+   "meals": [
+    "almuerzo"
+   ],
+   "origin": "Manabí, Ecuador",
+   "minutes": 80,
+   "difficulty": "Media",
+   "servings": 6,
+   "tags": [
+    "sin_gluten"
+   ],
+   "nutrition": {
+    "kcal": 450,
+    "protein": 26,
+    "carbs": 46,
+    "fat": 18
+   },
+   "ingredients": [
+    {
+     "id": "verde",
+     "qty": 5,
+     "unit": "unidad",
+     "note": "crudos y rallados"
+    },
+    {
+     "id": "mani_molido",
+     "qty": 1,
+     "unit": "taza"
+    },
+    {
+     "id": "pescado",
+     "qty": 600,
+     "unit": "g",
+     "note": "en trozos (albacora o picudo)"
+    },
+    {
+     "id": "cebolla_paitena",
+     "qty": 1,
+     "unit": "unidad"
+    },
+    {
+     "id": "pimiento",
+     "qty": 1,
+     "unit": "unidad"
+    },
+    {
+     "id": "ajo",
+     "qty": 3,
+     "unit": "diente"
+    },
+    {
+     "id": "achiote",
+     "qty": 1,
+     "unit": "cda"
+    },
+    {
+     "id": "comino",
+     "qty": 1,
+     "unit": "cdta"
+    },
+    {
+     "id": "cilantro",
+     "qty": 0.5,
+     "unit": "atado"
+    },
+    {
+     "id": "hoja_platano",
+     "qty": 6,
+     "unit": "unidad"
+    },
+    {
+     "id": "agua",
+     "qty": 3,
+     "unit": "taza"
+    },
+    {
+     "id": "sal",
+     "qty": null,
+     "unit": null
+    },
+    {
+     "id": "aceite",
+     "qty": 2,
+     "unit": "cda"
+    }
+   ],
+   "steps": [
+    {
+     "text": "Haz un refrito con cebolla, pimiento, ajo, comino y achiote.",
+     "timerMinutes": 5
+    },
+    {
+     "text": "Licúa el maní con 2 tazas de agua."
+    },
+    {
+     "text": "Mezcla el verde rallado con el maní licuado, la mitad del refrito y sal. Cocina moviendo hasta que espese.",
+     "timerMinutes": 10
+    },
+    {
+     "text": "Adoba el pescado con el resto del refrito y el cilantro picado."
+    },
+    {
+     "text": "En cada hoja de plátano pon una capa de masa, un trozo de pescado y otra capa de masa. Envuelve y amarra."
+    },
+    {
+     "text": "Cocina los bollos en una olla tapada con un poco de agua en el fondo, al vapor.",
+     "timerMinutes": 40
+    }
+   ]
+  },
+  {
+   "id": "sango_camaron",
+   "name": "Sango de camarón",
+   "emoji": "🦐",
+   "description": "Crema espesa de verde rallado y maní con camarones. Sabor costeño en un plato.",
+   "meals": [
+    "almuerzo"
+   ],
+   "origin": "Manabí, Ecuador",
+   "minutes": 45,
+   "difficulty": "Fácil",
+   "servings": 4,
+   "tags": [
+    "sin_gluten"
+   ],
+   "nutrition": {
+    "kcal": 480,
+    "protein": 28,
+    "carbs": 46,
+    "fat": 20
+   },
+   "ingredients": [
+    {
+     "id": "camaron",
+     "qty": 500,
+     "unit": "g",
+     "note": "pelado"
+    },
+    {
+     "id": "verde",
+     "qty": 3,
+     "unit": "unidad",
+     "note": "crudos y rallados"
+    },
+    {
+     "id": "mani_molido",
+     "qty": 0.75,
+     "unit": "taza"
+    },
+    {
+     "id": "cebolla_paitena",
+     "qty": 1,
+     "unit": "unidad"
+    },
+    {
+     "id": "pimiento",
+     "qty": 1,
+     "unit": "unidad"
+    },
+    {
+     "id": "tomate",
+     "qty": 2,
+     "unit": "unidad"
+    },
+    {
+     "id": "ajo",
+     "qty": 3,
+     "unit": "diente"
+    },
+    {
+     "id": "achiote",
+     "qty": 1,
+     "unit": "cda"
+    },
+    {
+     "id": "comino",
+     "qty": 0.5,
+     "unit": "cdta"
+    },
+    {
+     "id": "cilantro",
+     "qty": 0.5,
+     "unit": "atado"
+    },
+    {
+     "id": "leche",
+     "qty": 1,
+     "unit": "taza"
+    },
+    {
+     "id": "agua",
+     "qty": 3,
+     "unit": "taza"
+    },
+    {
+     "id": "arroz",
+     "qty": 2,
+     "unit": "taza",
+     "note": "para acompañar"
+    },
+    {
+     "id": "sal",
+     "qty": null,
+     "unit": null
+    },
+    {
+     "id": "aceite",
+     "qty": 2,
+     "unit": "cda"
+    }
+   ],
+   "steps": [
+    {
+     "text": "Haz un refrito con cebolla, pimiento, tomate, ajo, comino y achiote.",
+     "timerMinutes": 6
+    },
+    {
+     "text": "Licúa el maní con la leche."
+    },
+    {
+     "text": "Agrega el agua y el verde rallado al refrito y mueve sin parar hasta que espese.",
+     "timerMinutes": 15
+    },
+    {
+     "text": "Incorpora el maní licuado y cocina a fuego bajo.",
+     "timerMinutes": 5
+    },
+    {
+     "text": "Añade los camarones y cocina solo hasta que se pongan rosados.",
+     "timerMinutes": 4
+    },
+    {
+     "text": "Termina con cilantro y sirve con arroz blanco."
+    }
+   ]
+  },
+  {
+   "id": "muchines_yuca",
+   "name": "Muchines de yuca",
+   "emoji": "🧀",
+   "description": "Bolitas de yuca rellenas de queso, doradas por fuera y suaves por dentro.",
+   "meals": [
+    "snack",
+    "desayuno"
+   ],
+   "origin": "Manabí, Ecuador",
+   "minutes": 45,
+   "difficulty": "Fácil",
+   "servings": 4,
+   "tags": [
+    "vegetariano",
+    "sin_gluten",
+    "economico"
+   ],
+   "nutrition": {
+    "kcal": 340,
+    "protein": 8,
+    "carbs": 50,
+    "fat": 12
+   },
+   "ingredients": [
+    {
+     "id": "yuca",
+     "qty": 1,
+     "unit": "kg"
+    },
+    {
+     "id": "queso",
+     "qty": 150,
+     "unit": "g",
+     "note": "en cubitos"
+    },
+    {
+     "id": "huevo",
+     "qty": 1,
+     "unit": "unidad"
+    },
+    {
+     "id": "mantequilla",
+     "qty": 1,
+     "unit": "cda"
+    },
+    {
+     "id": "cebolla_blanca",
+     "qty": 1,
+     "unit": "rama",
+     "note": "picada fina"
+    },
+    {
+     "id": "aceite",
+     "qty": 1,
+     "unit": "taza",
+     "note": "para freír"
+    },
+    {
+     "id": "agua",
+     "qty": null,
+     "unit": null
+    },
+    {
+     "id": "sal",
+     "qty": null,
+     "unit": null
+    }
+   ],
+   "steps": [
+    {
+     "text": "Pela la yuca, córtala en trozos y cocínala en agua con sal hasta que esté suave.",
+     "timerMinutes": 25
+    },
+    {
+     "text": "Retira la vena del centro y maja la yuca caliente con la mantequilla."
+    },
+    {
+     "text": "Agrega el huevo, la cebolla y sal, y amasa hasta tener una masa suave."
+    },
+    {
+     "text": "Forma bolitas, hazles un hueco, rellénalas con queso y ciérralas."
+    },
+    {
+     "text": "Fríelas en aceite caliente hasta que estén doradas.",
+     "timerMinutes": 5
+    }
+   ],
+   "tip": "En Manabí se sirven con café o con miel por encima."
+  },
+  {
+   "id": "tortillas_yuca",
+   "name": "Tortillas de yuca con queso",
+   "emoji": "🫓",
+   "description": "Tortillas de yuca rallada con queso, hechas en sartén o en tiesto de barro.",
+   "meals": [
+    "desayuno",
+    "snack"
+   ],
+   "origin": "Manabí, Ecuador",
+   "minutes": 40,
+   "difficulty": "Fácil",
+   "servings": 4,
+   "tags": [
+    "vegetariano",
+    "sin_gluten",
+    "economico"
+   ],
+   "nutrition": {
+    "kcal": 310,
+    "protein": 9,
+    "carbs": 46,
+    "fat": 10
+   },
+   "ingredients": [
+    {
+     "id": "yuca",
+     "qty": 800,
+     "unit": "g",
+     "note": "cruda"
+    },
+    {
+     "id": "queso",
+     "qty": 150,
+     "unit": "g",
+     "note": "desmenuzado"
+    },
+    {
+     "id": "huevo",
+     "qty": 1,
+     "unit": "unidad"
+    },
+    {
+     "id": "mantequilla",
+     "qty": 2,
+     "unit": "cda",
+     "note": "derretida"
+    },
+    {
+     "id": "achiote",
+     "qty": 1,
+     "unit": "cdta"
+    },
+    {
+     "id": "sal",
+     "qty": null,
+     "unit": null
+    }
+   ],
+   "steps": [
+    {
+     "text": "Pela la yuca y rállala cruda por el lado fino del rallador."
+    },
+    {
+     "text": "Pon la yuca rallada en un paño limpio y exprímela bien para sacar el líquido."
+    },
+    {
+     "text": "Mezcla la yuca con el huevo, la mantequilla, el achiote y sal."
+    },
+    {
+     "text": "Toma porciones, rellénalas con queso y aplánalas como tortillas."
+    },
+    {
+     "text": "Cocínalas en una sartén a fuego medio con un poco de mantequilla, de un lado.",
+     "timerMinutes": 5
+    },
+    {
+     "text": "Dales la vuelta y cocina del otro lado hasta que estén doradas.",
+     "timerMinutes": 5
+    }
+   ]
+  },
+  {
+   "id": "verde_salprieta",
+   "name": "Verde asado con salprieta y queso",
+   "emoji": "🍌",
+   "description": "Desayuno manaba sencillo y lleno de sabor: verde asado, salprieta y queso fresco.",
+   "meals": [
+    "desayuno",
+    "snack"
+   ],
+   "origin": "Manabí, Ecuador",
+   "minutes": 30,
+   "difficulty": "Fácil",
+   "servings": 2,
+   "tags": [
+    "vegetariano",
+    "sin_gluten",
+    "economico"
+   ],
+   "nutrition": {
+    "kcal": 380,
+    "protein": 12,
+    "carbs": 56,
+    "fat": 13
+   },
+   "ingredients": [
+    {
+     "id": "verde",
+     "qty": 2,
+     "unit": "unidad"
+    },
+    {
+     "id": "salprieta",
+     "qty": 4,
+     "unit": "cda"
+    },
+    {
+     "id": "queso",
+     "qty": 100,
+     "unit": "g"
+    },
+    {
+     "id": "mantequilla",
+     "qty": 1,
+     "unit": "cda"
+    },
+    {
+     "id": "sal",
+     "qty": null,
+     "unit": null
+    }
+   ],
+   "steps": [
+    {
+     "text": "Hazle cortes a lo largo a la cáscara de los verdes."
+    },
+    {
+     "text": "Asa los verdes con cáscara en una sartén, parrilla u horno, girándolos para que se asen parejo.",
+     "timerMinutes": 20
+    },
+    {
+     "text": "Pélalos, ábrelos a lo largo y úntales mantequilla."
+    },
+    {
+     "text": "Sirve con salprieta por encima y queso fresco al lado."
+    }
+   ],
+   "tip": "La salprieta lleva maní y maíz tostados y molidos, achiote, cebolla y cilantro. En Manabí se compra lista en el mercado."
+  },
+  {
+   "id": "caldo_bolas_verde",
+   "name": "Caldo de bolas de verde",
+   "emoji": "🍲",
+   "description": "Bolas de verde con maní, rellenas de carne, en un caldo con choclo y yuca.",
+   "meals": [
+    "almuerzo"
+   ],
+   "origin": "Manabí, Ecuador",
+   "minutes": 90,
+   "difficulty": "Difícil",
+   "servings": 6,
+   "tags": [
+    "sin_gluten"
+   ],
+   "nutrition": {
+    "kcal": 560,
+    "protein": 28,
+    "carbs": 62,
+    "fat": 20
+   },
+   "ingredients": [
+    {
+     "id": "verde",
+     "qty": 6,
+     "unit": "unidad"
+    },
+    {
+     "id": "carne_molida",
+     "qty": 400,
+     "unit": "g",
+     "note": "para el relleno"
+    },
+    {
+     "id": "carne_res",
+     "qty": 500,
+     "unit": "g",
+     "note": "con hueso, para el caldo"
+    },
+    {
+     "id": "mani_molido",
+     "qty": 0.5,
+     "unit": "taza"
+    },
+    {
+     "id": "choclo",
+     "qty": 2,
+     "unit": "unidad",
+     "note": "en trozos"
+    },
+    {
+     "id": "yuca",
+     "qty": 500,
+     "unit": "g",
+     "note": "en trozos"
+    },
+    {
+     "id": "huevo",
+     "qty": 2,
+     "unit": "unidad",
+     "note": "duros y picados"
+    },
+    {
+     "id": "cebolla_paitena",
+     "qty": 1,
+     "unit": "unidad"
+    },
+    {
+     "id": "pimiento",
+     "qty": 1,
+     "unit": "unidad"
+    },
+    {
+     "id": "ajo",
+     "qty": 3,
+     "unit": "diente"
+    },
+    {
+     "id": "achiote",
+     "qty": 1,
+     "unit": "cda"
+    },
+    {
+     "id": "comino",
+     "qty": 1,
+     "unit": "cdta"
+    },
+    {
+     "id": "cilantro",
+     "qty": 0.5,
+     "unit": "atado"
+    },
+    {
+     "id": "agua",
+     "qty": 3,
+     "unit": "l"
+    },
+    {
+     "id": "sal",
+     "qty": null,
+     "unit": null
+    },
+    {
+     "id": "aceite",
+     "qty": 2,
+     "unit": "cda"
+    }
+   ],
+   "steps": [
+    {
+     "text": "Cocina la carne del caldo en el agua con sal.",
+     "timerMinutes": 40
+    },
+    {
+     "text": "Haz un refrito con cebolla, pimiento, ajo, comino y achiote.",
+     "timerMinutes": 5
+    },
+    {
+     "text": "Mezcla la mitad del refrito con la carne molida y cocínala; agrega el huevo picado. Ese es el relleno.",
+     "timerMinutes": 8
+    },
+    {
+     "text": "Ralla 3 verdes crudos. Cocina los otros 3 en trozos dentro del caldo y luego májalos.",
+     "timerMinutes": 20
+    },
+    {
+     "text": "Mezcla el verde majado con el rallado, el maní, un poco de achiote y sal hasta tener una masa."
+    },
+    {
+     "text": "Forma bolas, hazles un hueco, rellénalas con carne y ciérralas bien."
+    },
+    {
+     "text": "Agrega al caldo el choclo, la yuca y el resto del refrito.",
+     "timerMinutes": 15
+    },
+    {
+     "text": "Pon las bolas en el caldo y cocina a fuego medio sin mover mucho.",
+     "timerMinutes": 15
+    },
+    {
+     "text": "Sirve con cilantro picado."
+    }
+   ]
   }
  ]
 }

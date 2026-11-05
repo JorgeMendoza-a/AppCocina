@@ -97,9 +97,6 @@ void main() {
     await tester.tap(find.text('Lista de compras de la semana'));
     await tester.pump();
     expect(userData.shoppingList, isNotEmpty);
-    expect(
-      userData.shoppingList.map((i) => i.text).join(),
-      isNot(contains('Sal')),
-    );
+    expect(userData.shoppingList.map((i) => i.text), isNot(contains('Sal')));
   });
 }
