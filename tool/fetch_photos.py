@@ -82,6 +82,7 @@ def strip(html):
 
 
 def thumb_url(orig, size):
+    orig = orig.split('?', 1)[0]  # quita parámetros de seguimiento (utm_...)
     name = orig.rsplit('/', 1)[-1]
     url = orig.replace('/wikipedia/commons/', '/wikipedia/commons/thumb/') + f'/{size}px-{name}'
     if name.lower().endswith(('.tif', '.tiff', '.webp')):
@@ -106,8 +107,9 @@ for rid, queries in QUERIES.items():
             if p['title'] in seen or not OK_LICENSE.match(lic) or ii.get('width', 0) < 600:
                 continue
             seen.add(p['title'])
-            cands.append({'title': p['title'], 'original': ii.get('url'),
-                          'page': ii.get('descriptionurl'), 'license': lic,
+            cands.append({'title': p['title'],
+                          'original': (ii.get('url') or '').split('?', 1)[0],
+                          'page': (ii.get('descriptionurl') or '').split('?', 1)[0], 'license': lic,
                           'artist': strip(em.get('Artist', {}).get('value'))[:120]})
         time.sleep(1)
     if time.time() > DEADLINE:
@@ -116,7 +118,8 @@ for rid, queries in QUERIES.items():
     for c in cands[:3]:
         path = f'{OUT}/{rid}_{len(kept)}.jpg'
         # 500 px es un tamaño estándar de Wikimedia (los demás se limitan).
-        data = fetch(thumb_url(c['original'], 500))
+        data = fetch(thumb_url(c['original'], 960), attempts=1) or fetch(
+            thumb_url(c['original'], 500))
         if data:
             open(path, 'wb').write(data)
             c['file'] = path
