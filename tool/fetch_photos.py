@@ -55,14 +55,20 @@ OK_LICENSE = re.compile(
     r'^(cc0|pd|public domain|cc by(-sa)? ?[1-4]\.0|cc-by(-sa)?-[1-4]\.0)', re.I)
 
 
-def fetch(url):
-    for attempt in range(5):
+# Tiempo máximo de búsqueda: al terminar se guarda lo que se haya bajado.
+DEADLINE = time.time() + 25 * 60
+
+
+def fetch(url, attempts=3):
+    for attempt in range(attempts):
+        if time.time() > DEADLINE:
+            return None
         try:
             req = urllib.request.Request(url, headers={'User-Agent': UA})
-            return urllib.request.urlopen(req, timeout=60).read()
+            return urllib.request.urlopen(req, timeout=30).read()
         except Exception as e:  # noqa: BLE001
-            print('  retry', attempt, url[:90], e)
-            time.sleep(10 * (attempt + 1))
+            print('  retry', attempt, url[:90], e, flush=True)
+            time.sleep(5 * (attempt + 1))
     return None
 
 
@@ -104,10 +110,13 @@ for rid, queries in QUERIES.items():
                           'page': ii.get('descriptionurl'), 'license': lic,
                           'artist': strip(em.get('Artist', {}).get('value'))[:120]})
         time.sleep(1)
+    if time.time() > DEADLINE:
+        break
     kept = []
-    for c in cands[:4]:
+    for c in cands[:3]:
         path = f'{OUT}/{rid}_{len(kept)}.jpg'
-        data = fetch(thumb_url(c['original'], 960)) or fetch(thumb_url(c['original'], 500))
+        # 500 px es un tamaño estándar de Wikimedia (los demás se limitan).
+        data = fetch(thumb_url(c['original'], 500))
         if data:
             open(path, 'wb').write(data)
             c['file'] = path
@@ -115,13 +124,12 @@ for rid, queries in QUERIES.items():
         time.sleep(1)
     meta[rid] = kept
     print(rid, len(kept), flush=True)
-
-json.dump(meta, open(f'{OUT}/meta.json', 'w'), ensure_ascii=False, indent=1)
+    json.dump(meta, open(f'{OUT}/meta.json', 'w'), ensure_ascii=False, indent=1)
 
 rows = list(meta.items())
 for n in range(0, len(rows), 6):
     chunk = rows[n:n + 6]
-    sheet = Image.new('RGB', (4 * 265 + 170, len(chunk) * 215), 'white')
+    sheet = Image.new('RGB', (3 * 265 + 170, len(chunk) * 215), 'white')
     d = ImageDraw.Draw(sheet)
     for r, (rid, cands) in enumerate(chunk):
         d.text((5, r * 215 + 90), rid, fill='black')
