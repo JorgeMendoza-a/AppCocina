@@ -79,14 +79,39 @@ class RecipeIngredient {
 }
 
 class RecipeStep {
-  const RecipeStep({required this.text, this.timerMinutes});
+  const RecipeStep({required this.text, this.timerMinutes, this.image});
 
   final String text;
   final int? timerMinutes;
 
+  /// Foto opcional del paso (ruta dentro de assets). Si no hay, la app
+  /// muestra una ilustración automática según la acción del paso.
+  final String? image;
+
   factory RecipeStep.fromJson(Map<String, dynamic> json) => RecipeStep(
     text: json['text'] as String,
     timerMinutes: json['timerMinutes'] as int?,
+    image: json['image'] as String?,
+  );
+}
+
+/// Autoría y licencia de una foto (necesario para fotos con licencia
+/// Creative Commons).
+class ImageCredit {
+  const ImageCredit({
+    required this.author,
+    required this.license,
+    required this.source,
+  });
+
+  final String author;
+  final String license;
+  final String source;
+
+  factory ImageCredit.fromJson(Map<String, dynamic> json) => ImageCredit(
+    author: json['author'] as String,
+    license: json['license'] as String,
+    source: json['source'] as String,
   );
 }
 
@@ -128,6 +153,8 @@ class Recipe {
     required this.ingredients,
     required this.steps,
     this.tip,
+    this.image,
+    this.imageCredit,
   });
 
   final String id;
@@ -144,6 +171,10 @@ class Recipe {
   final List<RecipeIngredient> ingredients;
   final List<RecipeStep> steps;
   final String? tip;
+
+  /// Foto del plato (ruta dentro de assets), opcional.
+  final String? image;
+  final ImageCredit? imageCredit;
 
   bool get isVegetarian => tags.contains(RecipeTags.vegetariano);
   bool get isGlutenFree => tags.contains(RecipeTags.sinGluten);
@@ -172,5 +203,9 @@ class Recipe {
         .map((e) => RecipeStep.fromJson(e as Map<String, dynamic>))
         .toList(),
     tip: json['tip'] as String?,
+    image: json['image'] as String?,
+    imageCredit: json['imageCredit'] == null
+        ? null
+        : ImageCredit.fromJson(json['imageCredit'] as Map<String, dynamic>),
   );
 }

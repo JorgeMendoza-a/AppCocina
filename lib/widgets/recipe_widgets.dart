@@ -1,22 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../app.dart';
 import '../models/recipe.dart';
 import '../screens/recipe_detail_screen.dart';
 import '../state/user_data.dart';
 
-/// Color de fondo para el emoji de cada receta, según la comida principal.
-Color recipeTint(BuildContext context, Recipe recipe) {
-  final scheme = Theme.of(context).colorScheme;
-  final base = switch (recipe.meals.first) {
-    MealType.desayuno => const Color(0xFFFFC94D),
-    MealType.almuerzo => const Color(0xFFFF8A5B),
-    MealType.cena => const Color(0xFF7E8CE0),
-    MealType.snack => const Color(0xFF6CC48A),
-  };
-  final dark = Theme.of(context).brightness == Brightness.dark;
-  return Color.lerp(base, scheme.surface, dark ? 0.65 : 0.55)!;
-}
+/// Color pastel de fondo para cada receta, según la comida principal.
+Color recipeTint(BuildContext context, Recipe recipe) =>
+    switch (recipe.meals.first) {
+      MealType.desayuno => AppColors.butter,
+      MealType.almuerzo => AppColors.peach,
+      MealType.cena => AppColors.lavender,
+      MealType.snack => AppColors.mint,
+    };
 
 void openRecipe(BuildContext context, Recipe recipe) {
   Navigator.of(
@@ -32,13 +29,26 @@ class RecipeEmoji extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final radius = BorderRadius.circular(size * 0.28);
+    if (recipe.image != null) {
+      return ClipRRect(
+        borderRadius: radius,
+        child: Image.asset(
+          recipe.image!,
+          width: size,
+          height: size,
+          fit: BoxFit.cover,
+          cacheWidth: (size * 3).round(),
+        ),
+      );
+    }
     return Container(
       width: size,
       height: size,
       alignment: Alignment.center,
       decoration: BoxDecoration(
         color: recipeTint(context, recipe),
-        borderRadius: BorderRadius.circular(size * 0.28),
+        borderRadius: radius,
       ),
       child: Text(recipe.emoji, style: TextStyle(fontSize: size * 0.5)),
     );

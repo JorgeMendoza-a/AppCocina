@@ -5,6 +5,7 @@ import 'package:appcocina/services/recipe_matcher.dart';
 import 'package:appcocina/services/shopping_list_builder.dart';
 import 'package:appcocina/utils/quantity_format.dart';
 import 'package:appcocina/utils/text_search.dart';
+import 'package:appcocina/widgets/step_illustration.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 import 'test_helpers.dart';
@@ -228,6 +229,35 @@ void main() {
       final entries = builder.build([repo.recipe('encebollado')!], people: 6);
       final comino = entries.firstWhere((e) => e.ingredientId == 'comino');
       expect(comino.label, 'Comino');
+    });
+  });
+
+  group('Ilustraciones de pasos', () {
+    test('detecta la acción de cada paso', () {
+      expect(actionForStep('Pela los verdes y córtalos').label, 'Cortar');
+      expect(actionForStep('Licúa todo con la leche').label, 'Licuar');
+      expect(actionForStep('Precalienta el horno a 200 °C.').label, 'Hornear');
+      expect(actionForStep('Sofríe la cebolla y el ajo').label, 'Sofreír');
+      expect(actionForStep('Sirve con cilantro picado').label, 'Cortar');
+      expect(actionForStep('Sirve caliente').label, 'Servir');
+    });
+
+    test('todas las recetas tienen una acción para cada paso', () {
+      for (final r in repo.recipes) {
+        for (final step in r.steps) {
+          expect(actionForStep(step.text).emoji, isNotEmpty);
+        }
+      }
+    });
+
+    test('encuentra los ingredientes mencionados en el paso', () {
+      final r = repo.recipe('bolon_verde')!;
+      final emojis = ingredientEmojisForStep(
+        repo,
+        r,
+        'Mezcla el queso desmenuzado con la masa',
+      );
+      expect(emojis, ['🧀']);
     });
   });
 }

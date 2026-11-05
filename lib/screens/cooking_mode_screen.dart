@@ -5,6 +5,7 @@ import 'package:flutter/services.dart';
 import 'package:wakelock_plus/wakelock_plus.dart';
 
 import '../models/recipe.dart';
+import '../widgets/step_illustration.dart';
 
 /// Modo cocina: un paso a la vez, letra grande, temporizadores y pantalla
 /// siempre encendida.
@@ -172,6 +173,7 @@ class _CookingModeScreenState extends State<CookingModeScreen> {
                   if (index == steps.length) return const _DonePage();
                   final step = steps[index];
                   return _StepPage(
+                    recipe: widget.recipe,
                     index: index,
                     total: steps.length,
                     step: step,
@@ -237,12 +239,14 @@ class _CookingModeScreenState extends State<CookingModeScreen> {
 
 class _StepPage extends StatelessWidget {
   const _StepPage({
+    required this.recipe,
     required this.index,
     required this.total,
     required this.step,
     this.timer,
   });
 
+  final Recipe recipe;
   final int index;
   final int total;
   final RecipeStep step;
@@ -253,10 +257,12 @@ class _StepPage extends StatelessWidget {
     final text = Theme.of(context).textTheme;
     final scheme = Theme.of(context).colorScheme;
     return SingleChildScrollView(
-      padding: const EdgeInsets.fromLTRB(24, 32, 24, 24),
+      padding: const EdgeInsets.fromLTRB(24, 20, 24, 24),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
+          StepIllustration(recipe: recipe, step: step),
+          const SizedBox(height: 20),
           Text(
             'Paso ${index + 1} de $total',
             style: text.titleMedium?.copyWith(

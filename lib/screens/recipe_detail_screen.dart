@@ -7,6 +7,8 @@ import '../services/shopping_list_builder.dart';
 import '../state/user_data.dart';
 import '../utils/quantity_format.dart';
 import '../widgets/recipe_widgets.dart';
+import '../widgets/step_illustration.dart';
+import '../app.dart';
 import 'cooking_mode_screen.dart';
 
 class RecipeDetailScreen extends StatefulWidget {
@@ -55,32 +57,26 @@ class _RecipeDetailScreenState extends State<RecipeDetailScreen> {
         slivers: [
           SliverAppBar(
             pinned: true,
-            expandedHeight: 240,
+            expandedHeight: recipe.image != null ? 300 : 240,
             backgroundColor: recipeTint(context, recipe),
+            foregroundColor: scheme.onSurface,
             actions: [FavoriteButton(recipeId: recipe.id)],
-            flexibleSpace: FlexibleSpaceBar(
-              expandedTitleScale: 1.35,
-              titlePadding: const EdgeInsetsDirectional.fromSTEB(56, 0, 56, 16),
-              title: Text(
-                recipe.name,
-                maxLines: 2,
-                overflow: TextOverflow.ellipsis,
-                style: TextStyle(
-                  color: scheme.onSurface,
-                  fontWeight: FontWeight.w700,
-                ),
-              ),
-              background: Container(
-                color: recipeTint(context, recipe),
-                alignment: const Alignment(0, -0.2),
-                child: Text(recipe.emoji, style: const TextStyle(fontSize: 88)),
-              ),
-            ),
+            flexibleSpace: _RecipeHeader(recipe: recipe),
           ),
           SliverPadding(
             padding: const EdgeInsets.fromLTRB(16, 16, 16, 120),
             sliver: SliverList.list(
               children: [
+                if (recipe.imageCredit case final credit?)
+                  Padding(
+                    padding: const EdgeInsets.only(bottom: 8),
+                    child: Text(
+                      'Foto: ${credit.author} · ${credit.license}',
+                      style: text.labelSmall?.copyWith(
+                        color: scheme.onSurfaceVariant,
+                      ),
+                    ),
+                  ),
                 Text(recipe.description, style: text.bodyLarge),
                 const SizedBox(height: 12),
                 Wrap(
@@ -161,7 +157,11 @@ class _RecipeDetailScreenState extends State<RecipeDetailScreen> {
                 ),
                 const SizedBox(height: 12),
                 for (var i = 0; i < recipe.steps.length; i++)
-                  _StepTile(number: i + 1, step: recipe.steps[i]),
+                  _StepTile(
+                    number: i + 1,
+                    step: recipe.steps[i],
+                    recipe: recipe,
+                  ),
                 if (recipe.tip != null) ...[
                   const SizedBox(height: 8),
                   Card(
@@ -383,10 +383,15 @@ class _IngredientTile extends StatelessWidget {
 }
 
 class _StepTile extends StatelessWidget {
-  const _StepTile({required this.number, required this.step});
+  const _StepTile({
+    required this.number,
+    required this.step,
+    required this.recipe,
+  });
 
   final int number;
   final RecipeStep step;
+  final Recipe recipe;
 
   @override
   Widget build(BuildContext context) {
@@ -428,8 +433,77 @@ class _StepTile extends StatelessWidget {
               ],
             ),
           ),
+          const SizedBox(width: 12),
+          StepIllustration(recipe: recipe, step: step, compact: true),
         ],
       ),
+    );
+  }
+}
+
+/// Encabezado con la foto del plato (o su emoji si no tiene foto).
+class _RecipeHeader extends StatelessWidget {
+  const _RecipeHeader({required this.recipe});
+
+  final Recipe recipe;
+
+  @override
+  Widget build(BuildContext context) {
+    final hasImage = recipe.image != null;
+    final titleColor = hasImage ? Colors.white : AppColors.text;
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        // Al colapsar, el título pasa a la barra y se lee sobre el color.
+        final collapsed =
+            constraints.maxHeight <=
+            kToolbarHeight + MediaQuery.paddingOf(context).top + 8;
+        return FlexibleSpaceBar(
+          expandedTitleScale: 1.35,
+          titlePadding: const EdgeInsetsDirectional.fromSTEB(56, 0, 56, 16),
+          title: Text(
+            recipe.name,
+            maxLines: 2,
+            overflow: TextOverflow.ellipsis,
+            style: TextStyle(
+              color: collapsed ? AppColors.text : titleColor,
+              fontWeight: FontWeight.w700,
+              shadows: hasImage && !collapsed
+                  ? const [Shadow(color: Colors.black54, blurRadius: 8)]
+                  : null,
+            ),
+          ),
+          background: hasImage
+              ? Stack(
+                  fit: StackFit.expand,
+                  children: [
+                    Image.asset(recipe.image!, fit: BoxFit.cover),
+                    const DecoratedBox(
+                      decoration: BoxDecoration(
+                        gradient: LinearGradient(
+                          begin: Alignment.topCenter,
+                          end: Alignment.bottomCenter,
+                          colors: [
+                            Color(0x66000000),
+                            Color(0x00000000),
+                            Color(0x00000000),
+                            Color(0x99000000),
+                          ],
+                          stops: [0, 0.25, 0.55, 1],
+                        ),
+                      ),
+                    ),
+                  ],
+                )
+              : Container(
+                  color: recipeTint(context, recipe),
+                  alignment: const Alignment(0, -0.2),
+                  child: Text(
+                    recipe.emoji,
+                    style: const TextStyle(fontSize: 88),
+                  ),
+                ),
+        );
+      },
     );
   }
 }
