@@ -9,7 +9,7 @@ recopila datos personales.
 
 | Pantalla | Qué hace |
 |---|---|
-| **Recetas** | 35 recetas (muchas ecuatorianas y latinas). Búsqueda sin importar tildes, filtros por comida, rápidas, vegetarianas, sin gluten, económicas, altas en proteína y ligeras. |
+| **Recetas** | 35 recetas, 29 con foto, (muchas ecuatorianas y latinas). Búsqueda sin importar tildes, filtros por comida, rápidas, vegetarianas, sin gluten, económicas, altas en proteína y ligeras. |
 | **Detalle de receta** | Ajuste de porciones (las cantidades se recalculan), sustitutos de ingredientes, información nutricional aproximada y botón para mandar los ingredientes a la lista de compras. |
 | **Modo cocina** | Un paso a la vez con letra grande, temporizadores integrados y pantalla siempre encendida. |
 | **¿Qué cocino?** | Marcas los ingredientes que tienes y te dice qué puedes preparar ya y qué te falta, que puedes mandar a la lista con un toque. |
@@ -111,6 +111,23 @@ Edita `assets/data/recipes.json`. Cada receta tiene esta forma:
 Después de editar, corre `flutter test`: las pruebas revisan que los ids
 existan, que las recetas "sin gluten" no lleven trigo/avena/soya y que las
 vegetarianas no lleven carne.
+
+## Fotos
+
+- **Fotos de los platos:** 29 recetas tienen foto de Wikimedia Commons (en
+  `assets/images/`), con autor y licencia en `recipes.json` (`imageCredit`).
+  Las licencias CC BY y CC BY-SA exigen mostrar el crédito: aparece bajo la
+  foto y en *Acerca de → Créditos de fotos*. Las recetas sin foto muestran su
+  emoji sobre un color pastel.
+- **Pasos:** cada paso muestra una ilustración automática según la acción
+  (cortar, cocinar, sofreír, licuar...). Para usar una foto propia en un paso,
+  agrega `"image": "assets/images/mi_foto.jpg"` a ese paso en `recipes.json`.
+- **Agregar o cambiar una foto de plato:** copia la imagen a `assets/images/`
+  y pon en la receta `"image"` y `"imageCredit"`. Si la foto es tuya, usa
+  `{"author": "Tu nombre", "license": "Todos los derechos reservados", "source": ""}`.
+- **Buscar más fotos libres:** edita las búsquedas en `tool/fetch_photos.py` y
+  súbelo; la tarea *Descargar fotos candidatas* de GitHub Actions bajará las
+  candidatas a `photo_candidates/` para elegir.
 
 ## Publicar en Play Store
 

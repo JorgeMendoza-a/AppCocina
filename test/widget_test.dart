@@ -51,6 +51,11 @@ void main() {
 
     await tester.tap(find.text('Encebollado'));
     await tester.pumpAndSettle();
+    await tester.scrollUntilVisible(
+      find.text('Albacora fresca'),
+      200,
+      scrollable: find.byType(Scrollable).first,
+    );
     expect(find.text('Ingredientes'), findsOneWidget);
     expect(find.text('Albacora fresca'), findsOneWidget);
 

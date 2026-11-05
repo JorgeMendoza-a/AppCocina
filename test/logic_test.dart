@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:appcocina/models/diet_plan.dart';
 import 'package:appcocina/models/recipe.dart';
 import 'package:appcocina/services/plan_generator.dart';
@@ -19,6 +21,15 @@ void main() {
         final count = repo.recipes.where((r) => r.meals.contains(meal)).length;
         expect(count, greaterThanOrEqualTo(5), reason: meal.label);
       }
+    });
+
+    test('las fotos existen y tienen crédito', () {
+      for (final r in repo.recipes.where((r) => r.image != null)) {
+        expect(File(r.image!).existsSync(), isTrue, reason: r.image);
+        expect(r.imageCredit, isNotNull, reason: r.id);
+        expect(r.imageCredit!.license, isNotEmpty, reason: r.id);
+      }
+      expect(repo.recipes.where((r) => r.image != null).length, 29);
     });
 
     test('ids únicos e ingredientes conocidos', () {

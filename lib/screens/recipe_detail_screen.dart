@@ -60,7 +60,11 @@ class _RecipeDetailScreenState extends State<RecipeDetailScreen> {
             expandedHeight: recipe.image != null ? 300 : 240,
             backgroundColor: recipeTint(context, recipe),
             foregroundColor: scheme.onSurface,
-            actions: [FavoriteButton(recipeId: recipe.id)],
+            leading: const _CircleBackground(child: BackButton()),
+            actions: [
+              _CircleBackground(child: FavoriteButton(recipeId: recipe.id)),
+              const SizedBox(width: 4),
+            ],
             flexibleSpace: _RecipeHeader(recipe: recipe),
           ),
           SliverPadding(
@@ -504,6 +508,28 @@ class _RecipeHeader extends StatelessWidget {
                 ),
         );
       },
+    );
+  }
+}
+
+/// Fondo blanco circular para que los botones se vean sobre la foto.
+class _CircleBackground extends StatelessWidget {
+  const _CircleBackground({required this.child});
+
+  final Widget child;
+
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+      child: Container(
+        width: 40,
+        height: 40,
+        decoration: BoxDecoration(
+          color: Colors.white.withValues(alpha: 0.85),
+          shape: BoxShape.circle,
+        ),
+        child: Center(child: child),
+      ),
     );
   }
 }

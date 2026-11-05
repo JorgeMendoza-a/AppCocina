@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:package_info_plus/package_info_plus.dart';
 
 import '../app.dart';
+import 'photo_credits_screen.dart';
 
 class AboutScreen extends StatelessWidget {
   const AboutScreen({super.key});
@@ -72,6 +73,14 @@ class AboutScreen extends StatelessWidget {
                 'personales. Tus favoritos, tu lista de compras y tu plan '
                 'se guardan solo en este teléfono y se borran si '
                 'desinstalas la app.',
+          ),
+          Center(
+            child: TextButton(
+              onPressed: () => Navigator.of(context).push(
+                MaterialPageRoute(builder: (_) => const PhotoCreditsScreen()),
+              ),
+              child: const Text('Créditos de fotos'),
+            ),
           ),
           Center(
             child: TextButton(
