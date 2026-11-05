@@ -1,0 +1,3341 @@
+{
+ "version": 1,
+ "ingredients": [
+  {
+   "id": "pollo",
+   "name": "Pollo en presas",
+   "category": "Carnes y mariscos",
+   "emoji": "🍗",
+   "basic": false,
+   "substitute": "Pechuga de pollo"
+  },
+  {
+   "id": "pechuga",
+   "name": "Pechuga de pollo",
+   "category": "Carnes y mariscos",
+   "emoji": "🍗",
+   "basic": false,
+   "substitute": "Pollo en presas o atún en lata"
+  },
+  {
+   "id": "carne_res",
+   "name": "Carne de res (lomo)",
+   "category": "Carnes y mariscos",
+   "emoji": "🥩",
+   "basic": false,
+   "substitute": "Pechuga de pollo"
+  },
+  {
+   "id": "pescado",
+   "name": "Filete de pescado blanco",
+   "category": "Carnes y mariscos",
+   "emoji": "🐟",
+   "basic": false,
+   "substitute": "Corvina, tilapia o dorado"
+  },
+  {
+   "id": "albacora",
+   "name": "Albacora fresca",
+   "category": "Carnes y mariscos",
+   "emoji": "🐟",
+   "basic": false,
+   "substitute": "Bonito o atún en lata"
+  },
+  {
+   "id": "atun_lata",
+   "name": "Atún en lata",
+   "category": "Carnes y mariscos",
+   "emoji": "🥫",
+   "basic": false,
+   "substitute": "Pechuga de pollo desmenuzada"
+  },
+  {
+   "id": "camaron",
+   "name": "Camarón",
+   "category": "Carnes y mariscos",
+   "emoji": "🦐",
+   "basic": false,
+   "substitute": "Pescado blanco en cubos"
+  },
+  {
+   "id": "huevo",
+   "name": "Huevos",
+   "category": "Lácteos y huevos",
+   "emoji": "🥚",
+   "basic": false,
+   "substitute": "En masas: 1/2 guineo maduro aplastado por huevo"
+  },
+  {
+   "id": "leche",
+   "name": "Leche",
+   "category": "Lácteos y huevos",
+   "emoji": "🥛",
+   "basic": false,
+   "substitute": "Bebida de avena o de almendras"
+  },
+  {
+   "id": "queso",
+   "name": "Queso fresco",
+   "category": "Lácteos y huevos",
+   "emoji": "🧀",
+   "basic": false,
+   "substitute": "Queso mozzarella"
+  },
+  {
+   "id": "yogur",
+   "name": "Yogur natural",
+   "category": "Lácteos y huevos",
+   "emoji": "🥣",
+   "basic": false,
+   "substitute": "Leche con unas gotas de limón"
+  },
+  {
+   "id": "mantequilla",
+   "name": "Mantequilla",
+   "category": "Lácteos y huevos",
+   "emoji": "🧈",
+   "basic": false,
+   "substitute": "Aceite (la mitad de la cantidad)"
+  },
+  {
+   "id": "cebolla_paitena",
+   "name": "Cebolla colorada (paiteña)",
+   "category": "Verduras",
+   "emoji": "🧅",
+   "basic": false,
+   "substitute": "Cebolla blanca"
+  },
+  {
+   "id": "cebolla_blanca",
+   "name": "Cebolla blanca (larga)",
+   "category": "Verduras",
+   "emoji": "🧅",
+   "basic": false,
+   "substitute": "Cebolla colorada picada fina"
+  },
+  {
+   "id": "tomate",
+   "name": "Tomate",
+   "category": "Verduras",
+   "emoji": "🍅",
+   "basic": false
+  },
+  {
+   "id": "pimiento",
+   "name": "Pimiento",
+   "category": "Verduras",
+   "emoji": "🫑",
+   "basic": false
+  },
+  {
+   "id": "ajo",
+   "name": "Ajo",
+   "category": "Verduras",
+   "emoji": "🧄",
+   "basic": false,
+   "substitute": "Ajo en polvo (1/4 cdta por diente)"
+  },
+  {
+   "id": "zanahoria",
+   "name": "Zanahoria",
+   "category": "Verduras",
+   "emoji": "🥕",
+   "basic": false
+  },
+  {
+   "id": "papa",
+   "name": "Papa",
+   "category": "Verduras",
+   "emoji": "🥔",
+   "basic": false,
+   "substitute": "Yuca o camote"
+  },
+  {
+   "id": "yuca",
+   "name": "Yuca",
+   "category": "Verduras",
+   "emoji": "🥔",
+   "basic": false,
+   "substitute": "Papa"
+  },
+  {
+   "id": "verde",
+   "name": "Plátano verde",
+   "category": "Verduras",
+   "emoji": "🍌",
+   "basic": false,
+   "substitute": "Plátano maduro (sabor más dulce)"
+  },
+  {
+   "id": "maduro",
+   "name": "Plátano maduro",
+   "category": "Verduras",
+   "emoji": "🍌",
+   "basic": false,
+   "substitute": "Camote"
+  },
+  {
+   "id": "zapallo",
+   "name": "Zapallo",
+   "category": "Verduras",
+   "emoji": "🎃",
+   "basic": false,
+   "substitute": "Zanahoria o camote"
+  },
+  {
+   "id": "brocoli",
+   "name": "Brócoli",
+   "category": "Verduras",
+   "emoji": "🥦",
+   "basic": false,
+   "substitute": "Coliflor"
+  },
+  {
+   "id": "espinaca",
+   "name": "Espinaca",
+   "category": "Verduras",
+   "emoji": "🥬",
+   "basic": false,
+   "substitute": "Acelga"
+  },
+  {
+   "id": "lechuga",
+   "name": "Lechuga",
+   "category": "Verduras",
+   "emoji": "🥬",
+   "basic": false
+  },
+  {
+   "id": "pepino",
+   "name": "Pepino",
+   "category": "Verduras",
+   "emoji": "🥒",
+   "basic": false
+  },
+  {
+   "id": "choclo",
+   "name": "Choclo (maíz)",
+   "category": "Verduras",
+   "emoji": "🌽",
+   "basic": false,
+   "substitute": "Arveja"
+  },
+  {
+   "id": "arveja",
+   "name": "Arveja",
+   "category": "Verduras",
+   "emoji": "🫛",
+   "basic": false,
+   "substitute": "Choclo o vainitas"
+  },
+  {
+   "id": "cilantro",
+   "name": "Cilantro",
+   "category": "Verduras",
+   "emoji": "🌿",
+   "basic": false,
+   "substitute": "Perejil"
+  },
+  {
+   "id": "aguacate",
+   "name": "Aguacate",
+   "category": "Verduras",
+   "emoji": "🥑",
+   "basic": false
+  },
+  {
+   "id": "limon",
+   "name": "Limón",
+   "category": "Frutas",
+   "emoji": "🍋",
+   "basic": false,
+   "substitute": "Vinagre (solo en aliños)"
+  },
+  {
+   "id": "naranja",
+   "name": "Naranja",
+   "category": "Frutas",
+   "emoji": "🍊",
+   "basic": false
+  },
+  {
+   "id": "guineo",
+   "name": "Guineo (banano)",
+   "category": "Frutas",
+   "emoji": "🍌",
+   "basic": false
+  },
+  {
+   "id": "frutilla",
+   "name": "Frutilla",
+   "category": "Frutas",
+   "emoji": "🍓",
+   "basic": false,
+   "substitute": "Cualquier fruta de temporada"
+  },
+  {
+   "id": "manzana",
+   "name": "Manzana",
+   "category": "Frutas",
+   "emoji": "🍎",
+   "basic": false,
+   "substitute": "Pera"
+  },
+  {
+   "id": "arroz",
+   "name": "Arroz",
+   "category": "Granos y harinas",
+   "emoji": "🍚",
+   "basic": false,
+   "substitute": "Quinoa"
+  },
+  {
+   "id": "lenteja",
+   "name": "Lenteja",
+   "category": "Granos y harinas",
+   "emoji": "🫘",
+   "basic": false,
+   "substitute": "Fréjol o garbanzo"
+  },
+  {
+   "id": "frejol",
+   "name": "Fréjol rojo cocido",
+   "category": "Granos y harinas",
+   "emoji": "🫘",
+   "basic": false,
+   "substitute": "Lenteja cocida"
+  },
+  {
+   "id": "garbanzo",
+   "name": "Garbanzo cocido",
+   "category": "Granos y harinas",
+   "emoji": "🫘",
+   "basic": false,
+   "substitute": "Fréjol blanco cocido"
+  },
+  {
+   "id": "quinoa",
+   "name": "Quinoa",
+   "category": "Granos y harinas",
+   "emoji": "🌾",
+   "basic": false,
+   "substitute": "Arroz integral"
+  },
+  {
+   "id": "avena",
+   "name": "Avena en hojuelas",
+   "category": "Granos y harinas",
+   "emoji": "🌾",
+   "basic": false
+  },
+  {
+   "id": "fideo",
+   "name": "Tallarín",
+   "category": "Granos y harinas",
+   "emoji": "🍝",
+   "basic": false,
+   "substitute": "Arroz (como salteado)"
+  },
+  {
+   "id": "pan",
+   "name": "Pan integral",
+   "category": "Granos y harinas",
+   "emoji": "🍞",
+   "basic": false,
+   "substitute": "Tortillas de maíz"
+  },
+  {
+   "id": "tortilla",
+   "name": "Tortillas de maíz",
+   "category": "Granos y harinas",
+   "emoji": "🫓",
+   "basic": false,
+   "substitute": "Pan pita o pan integral"
+  },
+  {
+   "id": "granola",
+   "name": "Granola",
+   "category": "Granos y harinas",
+   "emoji": "🥣",
+   "basic": false,
+   "substitute": "Avena tostada en sartén"
+  },
+  {
+   "id": "mani",
+   "name": "Mantequilla de maní",
+   "category": "Condimentos y otros",
+   "emoji": "🥜",
+   "basic": false,
+   "substitute": "Mantequilla de almendras"
+  },
+  {
+   "id": "leche_coco",
+   "name": "Leche de coco",
+   "category": "Condimentos y otros",
+   "emoji": "🥥",
+   "basic": false,
+   "substitute": "Leche con 2 cdas de coco rallado"
+  },
+  {
+   "id": "salsa_soya",
+   "name": "Salsa de soya",
+   "category": "Condimentos y otros",
+   "emoji": "🥢",
+   "basic": false,
+   "substitute": "Tamari (si necesitas sin gluten)"
+  },
+  {
+   "id": "miel",
+   "name": "Miel",
+   "category": "Condimentos y otros",
+   "emoji": "🍯",
+   "basic": false,
+   "substitute": "Panela rallada o azúcar"
+  },
+  {
+   "id": "achiote",
+   "name": "Achiote (aceite o pasta)",
+   "category": "Condimentos y otros",
+   "emoji": "🟠",
+   "basic": false,
+   "substitute": "Paprika o pimentón dulce"
+  },
+  {
+   "id": "comino",
+   "name": "Comino",
+   "category": "Condimentos y otros",
+   "emoji": "🧂",
+   "basic": false
+  },
+  {
+   "id": "oregano",
+   "name": "Orégano",
+   "category": "Condimentos y otros",
+   "emoji": "🌿",
+   "basic": false
+  },
+  {
+   "id": "sal",
+   "name": "Sal",
+   "category": "Básicos",
+   "emoji": "🧂",
+   "basic": true
+  },
+  {
+   "id": "pimienta",
+   "name": "Pimienta",
+   "category": "Básicos",
+   "emoji": "🧂",
+   "basic": true
+  },
+  {
+   "id": "aceite",
+   "name": "Aceite",
+   "category": "Básicos",
+   "emoji": "🫗",
+   "basic": true
+  },
+  {
+   "id": "agua",
+   "name": "Agua",
+   "category": "Básicos",
+   "emoji": "💧",
+   "basic": true
+  }
+ ],
+ "recipes": [
+  {
+   "id": "bolon_verde",
+   "name": "Bolón de verde con queso",
+   "emoji": "🟡",
+   "description": "El clásico desayuno costeño: verde majado con queso, dorado por fuera.",
+   "meals": [
+    "desayuno"
+   ],
+   "origin": "Ecuador",
+   "minutes": 35,
+   "difficulty": "Fácil",
+   "servings": 4,
+   "tags": [
+    "vegetariano",
+    "sin_gluten",
+    "economico"
+   ],
+   "nutrition": {
+    "kcal": 420,
+    "protein": 12,
+    "carbs": 62,
+    "fat": 14
+   },
+   "ingredients": [
+    {
+     "id": "verde",
+     "qty": 4,
+     "unit": "unidad"
+    },
+    {
+     "id": "queso",
+     "qty": 200,
+     "unit": "g",
+     "note": "desmenuzado"
+    },
+    {
+     "id": "mantequilla",
+     "qty": 2,
+     "unit": "cda"
+    },
+    {
+     "id": "sal",
+     "qty": null,
+     "unit": null
+    },
+    {
+     "id": "agua",
+     "qty": null,
+     "unit": null
+    }
+   ],
+   "steps": [
+    {
+     "text": "Pela los verdes y córtalos en trozos de unos 3 cm."
+    },
+    {
+     "text": "Cocina los trozos en agua hirviendo con sal hasta que estén suaves.",
+     "timerMinutes": 20
+    },
+    {
+     "text": "Escurre y maja los verdes todavía calientes junto con la mantequilla."
+    },
+    {
+     "text": "Mezcla el queso desmenuzado con la masa y forma 4 bolas compactas con las manos húmedas."
+    },
+    {
+     "text": "Dora los bolones en una sartén con un poco de aceite, girándolos para que se doren parejo.",
+     "timerMinutes": 6
+    }
+   ],
+   "tip": "Si los quieres más crujientes, puedes freír los verdes en vez de hervirlos."
+  },
+  {
+   "id": "tigrillo",
+   "name": "Tigrillo",
+   "emoji": "🍳",
+   "description": "Verde majado revuelto con huevo y queso, típico de Zaruma.",
+   "meals": [
+    "desayuno"
+   ],
+   "origin": "Ecuador",
+   "minutes": 30,
+   "difficulty": "Fácil",
+   "servings": 4,
+   "tags": [
+    "vegetariano",
+    "sin_gluten",
+    "economico"
+   ],
+   "nutrition": {
+    "kcal": 450,
+    "protein": 18,
+    "carbs": 60,
+    "fat": 16
+   },
+   "ingredients": [
+    {
+     "id": "verde",
+     "qty": 4,
+     "unit": "unidad"
+    },
+    {
+     "id": "huevo",
+     "qty": 4,
+     "unit": "unidad"
+    },
+    {
+     "id": "queso",
+     "qty": 150,
+     "unit": "g",
+     "note": "desmenuzado"
+    },
+    {
+     "id": "cebolla_blanca",
+     "qty": 1,
+     "unit": "rama",
+     "note": "picada fina"
+    },
+    {
+     "id": "mantequilla",
+     "qty": 2,
+     "unit": "cda"
+    },
+    {
+     "id": "sal",
+     "qty": null,
+     "unit": null
+    },
+    {
+     "id": "agua",
+     "qty": null,
+     "unit": null
+    }
+   ],
+   "steps": [
+    {
+     "text": "Pela y cocina los verdes en trozos en agua con sal.",
+     "timerMinutes": 20
+    },
+    {
+     "text": "Escurre y maja los verdes dejando algunos trocitos."
+    },
+    {
+     "text": "En una sartén grande derrite la mantequilla y sofríe la cebolla.",
+     "timerMinutes": 3
+    },
+    {
+     "text": "Agrega el verde majado y mezcla bien."
+    },
+    {
+     "text": "Añade los huevos batidos y el queso, y revuelve hasta que el huevo esté cocido.",
+     "timerMinutes": 4
+    }
+   ]
+  },
+  {
+   "id": "avena_frutas",
+   "name": "Avena cocida con frutas",
+   "emoji": "🥣",
+   "description": "Desayuno cremoso y llenador, listo en pocos minutos.",
+   "meals": [
+    "desayuno"
+   ],
+   "origin": "Casera",
+   "minutes": 15,
+   "difficulty": "Fácil",
+   "servings": 2,
+   "tags": [
+    "vegetariano",
+    "economico"
+   ],
+   "nutrition": {
+    "kcal": 330,
+    "protein": 12,
+    "carbs": 55,
+    "fat": 7
+   },
+   "ingredients": [
+    {
+     "id": "avena",
+     "qty": 1,
+     "unit": "taza"
+    },
+    {
+     "id": "leche",
+     "qty": 2,
+     "unit": "taza"
+    },
+    {
+     "id": "guineo",
+     "qty": 1,
+     "unit": "unidad",
+     "note": "en rodajas"
+    },
+    {
+     "id": "frutilla",
+     "qty": 6,
+     "unit": "unidad",
+     "note": "picadas"
+    },
+    {
+     "id": "miel",
+     "qty": 1,
+     "unit": "cda"
+    }
+   ],
+   "steps": [
+    {
+     "text": "Pon la leche y la avena en una olla a fuego medio."
+    },
+    {
+     "text": "Cocina moviendo de vez en cuando hasta que espese.",
+     "timerMinutes": 8
+    },
+    {
+     "text": "Sirve en tazones y decora con el guineo y las frutillas."
+    },
+    {
+     "text": "Endulza con la miel al gusto."
+    }
+   ]
+  },
+  {
+   "id": "huevos_pericos",
+   "name": "Huevos pericos",
+   "emoji": "🍳",
+   "description": "Huevos revueltos con tomate y cebolla. Rápidos y económicos.",
+   "meals": [
+    "desayuno",
+    "cena"
+   ],
+   "origin": "Latinoamérica",
+   "minutes": 10,
+   "difficulty": "Fácil",
+   "servings": 2,
+   "tags": [
+    "vegetariano",
+    "sin_gluten",
+    "economico"
+   ],
+   "nutrition": {
+    "kcal": 210,
+    "protein": 13,
+    "carbs": 5,
+    "fat": 15
+   },
+   "ingredients": [
+    {
+     "id": "huevo",
+     "qty": 4,
+     "unit": "unidad"
+    },
+    {
+     "id": "tomate",
+     "qty": 1,
+     "unit": "unidad",
+     "note": "picado"
+    },
+    {
+     "id": "cebolla_blanca",
+     "qty": 1,
+     "unit": "rama",
+     "note": "picada"
+    },
+    {
+     "id": "aceite",
+     "qty": 1,
+     "unit": "cda"
+    },
+    {
+     "id": "sal",
+     "qty": null,
+     "unit": null
+    },
+    {
+     "id": "pimienta",
+     "qty": null,
+     "unit": null
+    }
+   ],
+   "steps": [
+    {
+     "text": "Sofríe la cebolla y el tomate en el aceite.",
+     "timerMinutes": 3
+    },
+    {
+     "text": "Bate los huevos con sal y pimienta."
+    },
+    {
+     "text": "Agrega los huevos a la sartén y revuelve a fuego bajo hasta que cuajen.",
+     "timerMinutes": 3
+    }
+   ]
+  },
+  {
+   "id": "tostadas_aguacate",
+   "name": "Tostadas de aguacate y huevo",
+   "emoji": "🥑",
+   "description": "Pan integral tostado con aguacate y huevo. Grasas buenas y proteína.",
+   "meals": [
+    "desayuno"
+   ],
+   "origin": "Casera",
+   "minutes": 10,
+   "difficulty": "Fácil",
+   "servings": 2,
+   "tags": [
+    "vegetariano"
+   ],
+   "nutrition": {
+    "kcal": 340,
+    "protein": 14,
+    "carbs": 30,
+    "fat": 18
+   },
+   "ingredients": [
+    {
+     "id": "pan",
+     "qty": 4,
+     "unit": "rebanada"
+    },
+    {
+     "id": "aguacate",
+     "qty": 1,
+     "unit": "unidad"
+    },
+    {
+     "id": "huevo",
+     "qty": 2,
+     "unit": "unidad"
+    },
+    {
+     "id": "limon",
+     "qty": 0.5,
+     "unit": "unidad"
+    },
+    {
+     "id": "sal",
+     "qty": null,
+     "unit": null
+    },
+    {
+     "id": "pimienta",
+     "qty": null,
+     "unit": null
+    }
+   ],
+   "steps": [
+    {
+     "text": "Tuesta el pan."
+    },
+    {
+     "text": "Aplasta el aguacate con el jugo de limón, sal y pimienta."
+    },
+    {
+     "text": "Cocina los huevos en sartén o pochados.",
+     "timerMinutes": 4
+    },
+    {
+     "text": "Unta el aguacate sobre el pan y coloca el huevo encima."
+    }
+   ]
+  },
+  {
+   "id": "batido_guineo",
+   "name": "Batido de guineo, avena y maní",
+   "emoji": "🥤",
+   "description": "Batido energético para empezar el día o después de entrenar.",
+   "meals": [
+    "desayuno",
+    "snack"
+   ],
+   "origin": "Casera",
+   "minutes": 5,
+   "difficulty": "Fácil",
+   "servings": 2,
+   "tags": [
+    "vegetariano",
+    "economico"
+   ],
+   "nutrition": {
+    "kcal": 360,
+    "protein": 14,
+    "carbs": 50,
+    "fat": 12
+   },
+   "ingredients": [
+    {
+     "id": "guineo",
+     "qty": 2,
+     "unit": "unidad"
+    },
+    {
+     "id": "avena",
+     "qty": 4,
+     "unit": "cda"
+    },
+    {
+     "id": "leche",
+     "qty": 2,
+     "unit": "taza"
+    },
+    {
+     "id": "mani",
+     "qty": 2,
+     "unit": "cda"
+    },
+    {
+     "id": "miel",
+     "qty": 1,
+     "unit": "cdta"
+    }
+   ],
+   "steps": [
+    {
+     "text": "Pon todos los ingredientes en la licuadora."
+    },
+    {
+     "text": "Licúa hasta que quede cremoso y sirve de inmediato."
+    }
+   ],
+   "tip": "Usa guineo congelado para que quede más espeso y frío."
+  },
+  {
+   "id": "pancakes_avena",
+   "name": "Panqueques de avena y guineo",
+   "emoji": "🥞",
+   "description": "Panqueques sin harina, suaves y naturalmente dulces.",
+   "meals": [
+    "desayuno"
+   ],
+   "origin": "Casera",
+   "minutes": 20,
+   "difficulty": "Fácil",
+   "servings": 2,
+   "tags": [
+    "vegetariano"
+   ],
+   "nutrition": {
+    "kcal": 320,
+    "protein": 13,
+    "carbs": 48,
+    "fat": 9
+   },
+   "ingredients": [
+    {
+     "id": "avena",
+     "qty": 1,
+     "unit": "taza"
+    },
+    {
+     "id": "guineo",
+     "qty": 2,
+     "unit": "unidad",
+     "note": "bien maduros"
+    },
+    {
+     "id": "huevo",
+     "qty": 2,
+     "unit": "unidad"
+    },
+    {
+     "id": "leche",
+     "qty": 0.25,
+     "unit": "taza"
+    },
+    {
+     "id": "aceite",
+     "qty": 1,
+     "unit": "cdta"
+    }
+   ],
+   "steps": [
+    {
+     "text": "Licúa la avena, los guineos, los huevos y la leche hasta obtener una mezcla espesa."
+    },
+    {
+     "text": "Calienta una sartén antiadherente con unas gotas de aceite."
+    },
+    {
+     "text": "Vierte porciones pequeñas y cocina hasta que salgan burbujas; dales la vuelta.",
+     "timerMinutes": 3
+    },
+    {
+     "text": "Sirve con fruta o un hilo de miel."
+    }
+   ]
+  },
+  {
+   "id": "encebollado",
+   "name": "Encebollado",
+   "emoji": "🍲",
+   "description": "La sopa de pescado más querida de Ecuador, con yuca y curtido de cebolla.",
+   "meals": [
+    "almuerzo"
+   ],
+   "origin": "Ecuador",
+   "minutes": 60,
+   "difficulty": "Media",
+   "servings": 6,
+   "tags": [
+    "sin_gluten"
+   ],
+   "nutrition": {
+    "kcal": 380,
+    "protein": 32,
+    "carbs": 40,
+    "fat": 8
+   },
+   "ingredients": [
+    {
+     "id": "albacora",
+     "qty": 1,
+     "unit": "kg"
+    },
+    {
+     "id": "yuca",
+     "qty": 1,
+     "unit": "kg",
+     "note": "en trozos"
+    },
+    {
+     "id": "cebolla_paitena",
+     "qty": 3,
+     "unit": "unidad"
+    },
+    {
+     "id": "tomate",
+     "qty": 2,
+     "unit": "unidad"
+    },
+    {
+     "id": "pimiento",
+     "qty": 1,
+     "unit": "unidad"
+    },
+    {
+     "id": "cilantro",
+     "qty": 1,
+     "unit": "atado"
+    },
+    {
+     "id": "comino",
+     "qty": 1,
+     "unit": "cdta"
+    },
+    {
+     "id": "limon",
+     "qty": 4,
+     "unit": "unidad"
+    },
+    {
+     "id": "aceite",
+     "qty": 2,
+     "unit": "cda"
+    },
+    {
+     "id": "agua",
+     "qty": 2.5,
+     "unit": "l"
+    },
+    {
+     "id": "sal",
+     "qty": null,
+     "unit": null
+    }
+   ],
+   "steps": [
+    {
+     "text": "Haz un refrito con una cebolla, el tomate, el pimiento, el comino y el aceite.",
+     "timerMinutes": 5
+    },
+    {
+     "text": "Agrega el agua y la albacora, con unas ramas de cilantro. Cocina a fuego medio.",
+     "timerMinutes": 20
+    },
+    {
+     "text": "Saca el pescado, déjalo enfriar un poco y desmenúzalo. Cuela el caldo."
+    },
+    {
+     "text": "Cocina la yuca en el caldo hasta que esté muy suave.",
+     "timerMinutes": 25
+    },
+    {
+     "text": "Devuelve el pescado a la olla y ajusta la sal."
+    },
+    {
+     "text": "Prepara el curtido: corta las otras 2 cebollas en pluma fina, lávalas y mézclalas con el jugo de limón y sal."
+    },
+    {
+     "text": "Sirve caliente con el curtido y cilantro picado por encima."
+    }
+   ],
+   "tip": "Acompáñalo con chifles o canguil, como en la costa."
+  },
+  {
+   "id": "seco_pollo",
+   "name": "Seco de pollo",
+   "emoji": "🍛",
+   "description": "Pollo guisado en salsa de tomate y naranja, servido con arroz y maduro.",
+   "meals": [
+    "almuerzo",
+    "cena"
+   ],
+   "origin": "Ecuador",
+   "minutes": 60,
+   "difficulty": "Media",
+   "servings": 6,
+   "tags": [
+    "sin_gluten",
+    "economico"
+   ],
+   "nutrition": {
+    "kcal": 620,
+    "protein": 38,
+    "carbs": 70,
+    "fat": 18
+   },
+   "ingredients": [
+    {
+     "id": "pollo",
+     "qty": 1.5,
+     "unit": "kg"
+    },
+    {
+     "id": "cebolla_paitena",
+     "qty": 2,
+     "unit": "unidad"
+    },
+    {
+     "id": "tomate",
+     "qty": 3,
+     "unit": "unidad"
+    },
+    {
+     "id": "pimiento",
+     "qty": 1,
+     "unit": "unidad"
+    },
+    {
+     "id": "ajo",
+     "qty": 4,
+     "unit": "diente"
+    },
+    {
+     "id": "naranja",
+     "qty": 2,
+     "unit": "unidad",
+     "note": "en jugo"
+    },
+    {
+     "id": "cilantro",
+     "qty": 1,
+     "unit": "atado"
+    },
+    {
+     "id": "comino",
+     "qty": 1,
+     "unit": "cdta"
+    },
+    {
+     "id": "achiote",
+     "qty": 1,
+     "unit": "cda"
+    },
+    {
+     "id": "arroz",
+     "qty": 3,
+     "unit": "taza",
+     "note": "para acompañar"
+    },
+    {
+     "id": "maduro",
+     "qty": 2,
+     "unit": "unidad",
+     "note": "para acompañar"
+    },
+    {
+     "id": "sal",
+     "qty": null,
+     "unit": null
+    },
+    {
+     "id": "aceite",
+     "qty": 2,
+     "unit": "cda"
+    }
+   ],
+   "steps": [
+    {
+     "text": "Adoba el pollo con ajo machacado, comino y sal."
+    },
+    {
+     "text": "Licúa el tomate, la cebolla, el pimiento y la mitad del cilantro."
+    },
+    {
+     "text": "Dora el pollo en el aceite con achiote.",
+     "timerMinutes": 8
+    },
+    {
+     "text": "Agrega lo licuado y el jugo de naranja. Tapa y cocina a fuego bajo.",
+     "timerMinutes": 35
+    },
+    {
+     "text": "Mientras tanto, prepara el arroz y fríe o asa el maduro."
+    },
+    {
+     "text": "Termina con el resto del cilantro picado y sirve."
+    }
+   ]
+  },
+  {
+   "id": "menestra_lenteja",
+   "name": "Menestra de lenteja con arroz",
+   "emoji": "🫘",
+   "description": "Menestra espesa y sabrosa, rica en fibra y proteína vegetal.",
+   "meals": [
+    "almuerzo"
+   ],
+   "origin": "Ecuador",
+   "minutes": 50,
+   "difficulty": "Fácil",
+   "servings": 4,
+   "tags": [
+    "vegetariano",
+    "sin_gluten",
+    "economico"
+   ],
+   "nutrition": {
+    "kcal": 520,
+    "protein": 20,
+    "carbs": 92,
+    "fat": 7
+   },
+   "ingredients": [
+    {
+     "id": "lenteja",
+     "qty": 2,
+     "unit": "taza"
+    },
+    {
+     "id": "cebolla_paitena",
+     "qty": 1,
+     "unit": "unidad"
+    },
+    {
+     "id": "tomate",
+     "qty": 1,
+     "unit": "unidad"
+    },
+    {
+     "id": "pimiento",
+     "qty": 0.5,
+     "unit": "unidad"
+    },
+    {
+     "id": "ajo",
+     "qty": 2,
+     "unit": "diente"
+    },
+    {
+     "id": "comino",
+     "qty": 1,
+     "unit": "cdta"
+    },
+    {
+     "id": "achiote",
+     "qty": 1,
+     "unit": "cdta"
+    },
+    {
+     "id": "cilantro",
+     "qty": 0.5,
+     "unit": "atado"
+    },
+    {
+     "id": "arroz",
+     "qty": 2,
+     "unit": "taza",
+     "note": "para acompañar"
+    },
+    {
+     "id": "agua",
+     "qty": 1.5,
+     "unit": "l"
+    },
+    {
+     "id": "sal",
+     "qty": null,
+     "unit": null
+    },
+    {
+     "id": "aceite",
+     "qty": 1,
+     "unit": "cda"
+    }
+   ],
+   "steps": [
+    {
+     "text": "Lava las lentejas y retira las impurezas."
+    },
+    {
+     "text": "Cocínalas en el agua hasta que estén suaves.",
+     "timerMinutes": 25
+    },
+    {
+     "text": "Haz un refrito con cebolla, tomate, pimiento, ajo, comino y achiote.",
+     "timerMinutes": 5
+    },
+    {
+     "text": "Agrega el refrito a las lentejas y cocina hasta que espese, moviendo.",
+     "timerMinutes": 10
+    },
+    {
+     "text": "Prepara el arroz y sirve con cilantro picado."
+    }
+   ]
+  },
+  {
+   "id": "arroz_con_pollo",
+   "name": "Arroz con pollo",
+   "emoji": "🍚",
+   "description": "Un plato completo en una sola olla, perfecto para la familia.",
+   "meals": [
+    "almuerzo"
+   ],
+   "origin": "Latinoamérica",
+   "minutes": 50,
+   "difficulty": "Fácil",
+   "servings": 6,
+   "tags": [
+    "sin_gluten",
+    "economico"
+   ],
+   "nutrition": {
+    "kcal": 540,
+    "protein": 32,
+    "carbs": 75,
+    "fat": 11
+   },
+   "ingredients": [
+    {
+     "id": "pechuga",
+     "qty": 750,
+     "unit": "g",
+     "note": "en cubos"
+    },
+    {
+     "id": "arroz",
+     "qty": 3,
+     "unit": "taza"
+    },
+    {
+     "id": "zanahoria",
+     "qty": 2,
+     "unit": "unidad",
+     "note": "en cubitos"
+    },
+    {
+     "id": "arveja",
+     "qty": 1,
+     "unit": "taza"
+    },
+    {
+     "id": "pimiento",
+     "qty": 1,
+     "unit": "unidad"
+    },
+    {
+     "id": "cebolla_paitena",
+     "qty": 1,
+     "unit": "unidad"
+    },
+    {
+     "id": "ajo",
+     "qty": 3,
+     "unit": "diente"
+    },
+    {
+     "id": "achiote",
+     "qty": 1,
+     "unit": "cda"
+    },
+    {
+     "id": "comino",
+     "qty": 1,
+     "unit": "cdta"
+    },
+    {
+     "id": "cilantro",
+     "qty": 0.5,
+     "unit": "atado"
+    },
+    {
+     "id": "agua",
+     "qty": 6,
+     "unit": "taza"
+    },
+    {
+     "id": "sal",
+     "qty": null,
+     "unit": null
+    },
+    {
+     "id": "aceite",
+     "qty": 2,
+     "unit": "cda"
+    }
+   ],
+   "steps": [
+    {
+     "text": "Dora el pollo sazonado con sal y comino en el aceite con achiote.",
+     "timerMinutes": 6
+    },
+    {
+     "text": "Agrega cebolla, pimiento y ajo picados y sofríe.",
+     "timerMinutes": 4
+    },
+    {
+     "text": "Incorpora el arroz y mezcla para que se impregne."
+    },
+    {
+     "text": "Añade el agua, la zanahoria y la arveja. Cuando hierva, baja el fuego y tapa.",
+     "timerMinutes": 20
+    },
+    {
+     "text": "Deja reposar tapado 5 minutos y termina con cilantro."
+    }
+   ]
+  },
+  {
+   "id": "ceviche_camaron",
+   "name": "Ceviche de camarón",
+   "emoji": "🦐",
+   "description": "Ceviche ecuatoriano fresco, con limón, naranja y tomate.",
+   "meals": [
+    "almuerzo"
+   ],
+   "origin": "Ecuador",
+   "minutes": 30,
+   "difficulty": "Fácil",
+   "servings": 4,
+   "tags": [
+    "sin_gluten"
+   ],
+   "nutrition": {
+    "kcal": 220,
+    "protein": 26,
+    "carbs": 18,
+    "fat": 5
+   },
+   "ingredients": [
+    {
+     "id": "camaron",
+     "qty": 500,
+     "unit": "g",
+     "note": "pelado"
+    },
+    {
+     "id": "limon",
+     "qty": 10,
+     "unit": "unidad"
+    },
+    {
+     "id": "naranja",
+     "qty": 2,
+     "unit": "unidad"
+    },
+    {
+     "id": "tomate",
+     "qty": 3,
+     "unit": "unidad"
+    },
+    {
+     "id": "cebolla_paitena",
+     "qty": 1,
+     "unit": "unidad"
+    },
+    {
+     "id": "cilantro",
+     "qty": 0.5,
+     "unit": "atado"
+    },
+    {
+     "id": "aceite",
+     "qty": 1,
+     "unit": "cda"
+    },
+    {
+     "id": "sal",
+     "qty": null,
+     "unit": null
+    },
+    {
+     "id": "agua",
+     "qty": null,
+     "unit": null
+    }
+   ],
+   "steps": [
+    {
+     "text": "Cocina los camarones en agua hirviendo con sal, solo hasta que se pongan rosados.",
+     "timerMinutes": 2
+    },
+    {
+     "text": "Pásalos a agua con hielo y guarda una taza del agua de cocción fría."
+    },
+    {
+     "text": "Corta la cebolla en pluma fina, lávala y cúrtela con limón y sal."
+    },
+    {
+     "text": "Licúa un tomate con el jugo de las naranjas y el agua de cocción."
+    },
+    {
+     "text": "Mezcla todo con los camarones, el resto del tomate picado, el jugo de limón y el aceite."
+    },
+    {
+     "text": "Refrigera unos minutos y sirve con cilantro."
+    }
+   ],
+   "tip": "Sírvelo con chifles, canguil o tostado."
+  },
+  {
+   "id": "locro_papa",
+   "name": "Locro de papa",
+   "emoji": "🥔",
+   "description": "Sopa espesa de papa con queso y aguacate, típica de la Sierra.",
+   "meals": [
+    "almuerzo",
+    "cena"
+   ],
+   "origin": "Ecuador",
+   "minutes": 40,
+   "difficulty": "Fácil",
+   "servings": 4,
+   "tags": [
+    "vegetariano",
+    "sin_gluten",
+    "economico"
+   ],
+   "nutrition": {
+    "kcal": 390,
+    "protein": 14,
+    "carbs": 52,
+    "fat": 15
+   },
+   "ingredients": [
+    {
+     "id": "papa",
+     "qty": 1,
+     "unit": "kg"
+    },
+    {
+     "id": "cebolla_blanca",
+     "qty": 2,
+     "unit": "rama"
+    },
+    {
+     "id": "ajo",
+     "qty": 2,
+     "unit": "diente"
+    },
+    {
+     "id": "leche",
+     "qty": 1,
+     "unit": "taza"
+    },
+    {
+     "id": "queso",
+     "qty": 150,
+     "unit": "g"
+    },
+    {
+     "id": "aguacate",
+     "qty": 1,
+     "unit": "unidad"
+    },
+    {
+     "id": "achiote",
+     "qty": 1,
+     "unit": "cdta"
+    },
+    {
+     "id": "comino",
+     "qty": 0.5,
+     "unit": "cdta"
+    },
+    {
+     "id": "cilantro",
+     "qty": 0.25,
+     "unit": "atado"
+    },
+    {
+     "id": "agua",
+     "qty": 1.5,
+     "unit": "l"
+    },
+    {
+     "id": "sal",
+     "qty": null,
+     "unit": null
+    }
+   ],
+   "steps": [
+    {
+     "text": "Haz un refrito con cebolla, ajo, comino y achiote.",
+     "timerMinutes": 4
+    },
+    {
+     "text": "Agrega las papas peladas y en trozos, y el agua."
+    },
+    {
+     "text": "Cocina hasta que las papas se deshagan un poco.",
+     "timerMinutes": 25
+    },
+    {
+     "text": "Aplasta algunas papas para espesar, agrega la leche y el queso en cubos.",
+     "timerMinutes": 3
+    },
+    {
+     "text": "Sirve con aguacate en tajadas y cilantro."
+    }
+   ]
+  },
+  {
+   "id": "pescado_horno",
+   "name": "Pescado al horno con verduras",
+   "emoji": "🐟",
+   "description": "Liviano y completo: todo se cocina junto en una bandeja.",
+   "meals": [
+    "almuerzo",
+    "cena"
+   ],
+   "origin": "Casera",
+   "minutes": 35,
+   "difficulty": "Fácil",
+   "servings": 4,
+   "tags": [
+    "sin_gluten"
+   ],
+   "nutrition": {
+    "kcal": 330,
+    "protein": 33,
+    "carbs": 28,
+    "fat": 9
+   },
+   "ingredients": [
+    {
+     "id": "pescado",
+     "qty": 600,
+     "unit": "g",
+     "note": "en 4 filetes"
+    },
+    {
+     "id": "zanahoria",
+     "qty": 2,
+     "unit": "unidad"
+    },
+    {
+     "id": "brocoli",
+     "qty": 1,
+     "unit": "unidad"
+    },
+    {
+     "id": "papa",
+     "qty": 4,
+     "unit": "unidad"
+    },
+    {
+     "id": "limon",
+     "qty": 2,
+     "unit": "unidad"
+    },
+    {
+     "id": "ajo",
+     "qty": 3,
+     "unit": "diente"
+    },
+    {
+     "id": "oregano",
+     "qty": 1,
+     "unit": "cdta"
+    },
+    {
+     "id": "aceite",
+     "qty": 2,
+     "unit": "cda"
+    },
+    {
+     "id": "sal",
+     "qty": null,
+     "unit": null
+    },
+    {
+     "id": "pimienta",
+     "qty": null,
+     "unit": null
+    }
+   ],
+   "steps": [
+    {
+     "text": "Precalienta el horno a 200 °C."
+    },
+    {
+     "text": "Corta las papas y zanahorias en rodajas finas y el brócoli en ramitos."
+    },
+    {
+     "text": "Hornea primero las papas y zanahorias con aceite y sal.",
+     "timerMinutes": 12
+    },
+    {
+     "text": "Adoba el pescado con ajo, limón, orégano, sal y pimienta."
+    },
+    {
+     "text": "Agrega el pescado y el brócoli a la bandeja y hornea.",
+     "timerMinutes": 15
+    }
+   ]
+  },
+  {
+   "id": "ensalada_quinoa",
+   "name": "Ensalada de quinoa",
+   "emoji": "🥗",
+   "description": "Fresca, colorida y nutritiva. Ideal para llevar.",
+   "meals": [
+    "almuerzo",
+    "cena"
+   ],
+   "origin": "Andina",
+   "minutes": 25,
+   "difficulty": "Fácil",
+   "servings": 4,
+   "tags": [
+    "vegetariano",
+    "sin_gluten"
+   ],
+   "nutrition": {
+    "kcal": 310,
+    "protein": 9,
+    "carbs": 40,
+    "fat": 14
+   },
+   "ingredients": [
+    {
+     "id": "quinoa",
+     "qty": 1,
+     "unit": "taza"
+    },
+    {
+     "id": "tomate",
+     "qty": 2,
+     "unit": "unidad"
+    },
+    {
+     "id": "pepino",
+     "qty": 1,
+     "unit": "unidad"
+    },
+    {
+     "id": "aguacate",
+     "qty": 1,
+     "unit": "unidad"
+    },
+    {
+     "id": "choclo",
+     "qty": 1,
+     "unit": "taza",
+     "note": "desgranado y cocido"
+    },
+    {
+     "id": "limon",
+     "qty": 2,
+     "unit": "unidad"
+    },
+    {
+     "id": "cilantro",
+     "qty": 0.25,
+     "unit": "atado"
+    },
+    {
+     "id": "aceite",
+     "qty": 2,
+     "unit": "cda"
+    },
+    {
+     "id": "agua",
+     "qty": 2,
+     "unit": "taza"
+    },
+    {
+     "id": "sal",
+     "qty": null,
+     "unit": null
+    }
+   ],
+   "steps": [
+    {
+     "text": "Lava muy bien la quinoa frotándola para quitar el amargor."
+    },
+    {
+     "text": "Cocínala en el agua con sal hasta que se vea el germen.",
+     "timerMinutes": 15
+    },
+    {
+     "text": "Deja enfriar y mezcla con tomate, pepino y aguacate en cubos y el choclo."
+    },
+    {
+     "text": "Aliña con limón, aceite, sal y cilantro picado."
+    }
+   ]
+  },
+  {
+   "id": "pollo_plancha",
+   "name": "Pechuga a la plancha con ensalada",
+   "emoji": "🍗",
+   "description": "Alta en proteína y baja en calorías. Un básico para comer sano.",
+   "meals": [
+    "almuerzo",
+    "cena"
+   ],
+   "origin": "Casera",
+   "minutes": 20,
+   "difficulty": "Fácil",
+   "servings": 2,
+   "tags": [
+    "sin_gluten",
+    "economico"
+   ],
+   "nutrition": {
+    "kcal": 290,
+    "protein": 42,
+    "carbs": 8,
+    "fat": 10
+   },
+   "ingredients": [
+    {
+     "id": "pechuga",
+     "qty": 400,
+     "unit": "g",
+     "note": "en filetes"
+    },
+    {
+     "id": "lechuga",
+     "qty": 0.5,
+     "unit": "unidad"
+    },
+    {
+     "id": "tomate",
+     "qty": 1,
+     "unit": "unidad"
+    },
+    {
+     "id": "pepino",
+     "qty": 0.5,
+     "unit": "unidad"
+    },
+    {
+     "id": "limon",
+     "qty": 1,
+     "unit": "unidad"
+    },
+    {
+     "id": "ajo",
+     "qty": 2,
+     "unit": "diente"
+    },
+    {
+     "id": "oregano",
+     "qty": 0.5,
+     "unit": "cdta"
+    },
+    {
+     "id": "aceite",
+     "qty": 1,
+     "unit": "cda"
+    },
+    {
+     "id": "sal",
+     "qty": null,
+     "unit": null
+    },
+    {
+     "id": "pimienta",
+     "qty": null,
+     "unit": null
+    }
+   ],
+   "steps": [
+    {
+     "text": "Adoba los filetes con ajo machacado, limón, orégano, sal y pimienta."
+    },
+    {
+     "text": "Cocina en plancha caliente con unas gotas de aceite, de un lado.",
+     "timerMinutes": 5
+    },
+    {
+     "text": "Dales la vuelta y cocina del otro lado.",
+     "timerMinutes": 5
+    },
+    {
+     "text": "Mientras tanto, arma la ensalada y alíñala con limón y aceite."
+    }
+   ]
+  },
+  {
+   "id": "tallarin_saltado",
+   "name": "Tallarín saltado de pollo",
+   "emoji": "🍝",
+   "description": "Salteado al estilo chifa, rápido y lleno de sabor.",
+   "meals": [
+    "almuerzo",
+    "cena"
+   ],
+   "origin": "Chifa",
+   "minutes": 30,
+   "difficulty": "Fácil",
+   "servings": 4,
+   "tags": [
+    "economico"
+   ],
+   "nutrition": {
+    "kcal": 520,
+    "protein": 32,
+    "carbs": 70,
+    "fat": 12
+   },
+   "ingredients": [
+    {
+     "id": "fideo",
+     "qty": 400,
+     "unit": "g"
+    },
+    {
+     "id": "pechuga",
+     "qty": 400,
+     "unit": "g",
+     "note": "en tiras"
+    },
+    {
+     "id": "cebolla_paitena",
+     "qty": 1,
+     "unit": "unidad"
+    },
+    {
+     "id": "pimiento",
+     "qty": 1,
+     "unit": "unidad"
+    },
+    {
+     "id": "tomate",
+     "qty": 2,
+     "unit": "unidad"
+    },
+    {
+     "id": "salsa_soya",
+     "qty": 3,
+     "unit": "cda"
+    },
+    {
+     "id": "ajo",
+     "qty": 2,
+     "unit": "diente"
+    },
+    {
+     "id": "aceite",
+     "qty": 2,
+     "unit": "cda"
+    },
+    {
+     "id": "agua",
+     "qty": null,
+     "unit": null
+    },
+    {
+     "id": "sal",
+     "qty": null,
+     "unit": null
+    }
+   ],
+   "steps": [
+    {
+     "text": "Cocina el tallarín en agua con sal y escúrrelo.",
+     "timerMinutes": 10
+    },
+    {
+     "text": "Saltea el pollo en aceite bien caliente.",
+     "timerMinutes": 5
+    },
+    {
+     "text": "Agrega ajo, cebolla y pimiento en tiras, a fuego alto.",
+     "timerMinutes": 3
+    },
+    {
+     "text": "Añade el tomate en gajos, la salsa de soya y el tallarín. Mezcla bien y sirve."
+    }
+   ]
+  },
+  {
+   "id": "encocado_pescado",
+   "name": "Encocado de pescado",
+   "emoji": "🥥",
+   "description": "Pescado en salsa de coco, la joya de la cocina esmeraldeña.",
+   "meals": [
+    "almuerzo"
+   ],
+   "origin": "Ecuador",
+   "minutes": 40,
+   "difficulty": "Media",
+   "servings": 4,
+   "tags": [
+    "sin_gluten"
+   ],
+   "nutrition": {
+    "kcal": 560,
+    "protein": 32,
+    "carbs": 55,
+    "fat": 23
+   },
+   "ingredients": [
+    {
+     "id": "pescado",
+     "qty": 600,
+     "unit": "g",
+     "note": "en trozos"
+    },
+    {
+     "id": "leche_coco",
+     "qty": 400,
+     "unit": "ml"
+    },
+    {
+     "id": "cebolla_paitena",
+     "qty": 1,
+     "unit": "unidad"
+    },
+    {
+     "id": "pimiento",
+     "qty": 1,
+     "unit": "unidad"
+    },
+    {
+     "id": "tomate",
+     "qty": 2,
+     "unit": "unidad"
+    },
+    {
+     "id": "ajo",
+     "qty": 2,
+     "unit": "diente"
+    },
+    {
+     "id": "cilantro",
+     "qty": 0.5,
+     "unit": "atado"
+    },
+    {
+     "id": "achiote",
+     "qty": 1,
+     "unit": "cdta"
+    },
+    {
+     "id": "limon",
+     "qty": 1,
+     "unit": "unidad"
+    },
+    {
+     "id": "arroz",
+     "qty": 2,
+     "unit": "taza",
+     "note": "para acompañar"
+    },
+    {
+     "id": "sal",
+     "qty": null,
+     "unit": null
+    },
+    {
+     "id": "aceite",
+     "qty": 1,
+     "unit": "cda"
+    }
+   ],
+   "steps": [
+    {
+     "text": "Adoba el pescado con limón, ajo y sal."
+    },
+    {
+     "text": "Haz un refrito con cebolla, pimiento, tomate y achiote.",
+     "timerMinutes": 6
+    },
+    {
+     "text": "Agrega la leche de coco y deja hervir suave.",
+     "timerMinutes": 5
+    },
+    {
+     "text": "Incorpora el pescado y cocina sin mover mucho.",
+     "timerMinutes": 10
+    },
+    {
+     "text": "Termina con cilantro y sirve con arroz blanco."
+    }
+   ]
+  },
+  {
+   "id": "chaulafan",
+   "name": "Chaulafán de pollo",
+   "emoji": "🍛",
+   "description": "Arroz frito al estilo chifa. Ideal para aprovechar el arroz del día anterior.",
+   "meals": [
+    "almuerzo",
+    "cena"
+   ],
+   "origin": "Chifa",
+   "minutes": 30,
+   "difficulty": "Fácil",
+   "servings": 4,
+   "tags": [
+    "economico"
+   ],
+   "nutrition": {
+    "kcal": 480,
+    "protein": 26,
+    "carbs": 65,
+    "fat": 12
+   },
+   "ingredients": [
+    {
+     "id": "arroz",
+     "qty": 4,
+     "unit": "taza",
+     "note": "cocido y frío"
+    },
+    {
+     "id": "pechuga",
+     "qty": 300,
+     "unit": "g",
+     "note": "cocida en cubos"
+    },
+    {
+     "id": "huevo",
+     "qty": 2,
+     "unit": "unidad"
+    },
+    {
+     "id": "cebolla_blanca",
+     "qty": 2,
+     "unit": "rama"
+    },
+    {
+     "id": "zanahoria",
+     "qty": 1,
+     "unit": "unidad",
+     "note": "en cubitos"
+    },
+    {
+     "id": "arveja",
+     "qty": 0.5,
+     "unit": "taza"
+    },
+    {
+     "id": "salsa_soya",
+     "qty": 3,
+     "unit": "cda"
+    },
+    {
+     "id": "aceite",
+     "qty": 2,
+     "unit": "cda"
+    }
+   ],
+   "steps": [
+    {
+     "text": "Haz una tortilla con los huevos batidos, córtala en tiras y resérvala.",
+     "timerMinutes": 3
+    },
+    {
+     "text": "Saltea la zanahoria y la arveja en aceite bien caliente.",
+     "timerMinutes": 4
+    },
+    {
+     "text": "Agrega el pollo y el arroz, y saltea a fuego alto.",
+     "timerMinutes": 5
+    },
+    {
+     "text": "Añade la salsa de soya, la tortilla y la cebolla blanca picada. Mezcla y sirve."
+    }
+   ]
+  },
+  {
+   "id": "lomo_saltado",
+   "name": "Lomo saltado",
+   "emoji": "🥩",
+   "description": "Carne salteada con cebolla y tomate, con papas fritas y arroz.",
+   "meals": [
+    "almuerzo"
+   ],
+   "origin": "Perú",
+   "minutes": 30,
+   "difficulty": "Media",
+   "servings": 4,
+   "tags": [],
+   "nutrition": {
+    "kcal": 610,
+    "protein": 34,
+    "carbs": 68,
+    "fat": 22
+   },
+   "ingredients": [
+    {
+     "id": "carne_res",
+     "qty": 500,
+     "unit": "g",
+     "note": "en tiras"
+    },
+    {
+     "id": "cebolla_paitena",
+     "qty": 2,
+     "unit": "unidad"
+    },
+    {
+     "id": "tomate",
+     "qty": 3,
+     "unit": "unidad"
+    },
+    {
+     "id": "papa",
+     "qty": 4,
+     "unit": "unidad",
+     "note": "en bastones"
+    },
+    {
+     "id": "salsa_soya",
+     "qty": 3,
+     "unit": "cda"
+    },
+    {
+     "id": "ajo",
+     "qty": 3,
+     "unit": "diente"
+    },
+    {
+     "id": "cilantro",
+     "qty": 0.25,
+     "unit": "atado"
+    },
+    {
+     "id": "arroz",
+     "qty": 2,
+     "unit": "taza",
+     "note": "para acompañar"
+    },
+    {
+     "id": "aceite",
+     "qty": 3,
+     "unit": "cda"
+    },
+    {
+     "id": "sal",
+     "qty": null,
+     "unit": null
+    }
+   ],
+   "steps": [
+    {
+     "text": "Fríe o asa las papas en bastones hasta que estén doradas.",
+     "timerMinutes": 15
+    },
+    {
+     "text": "Saltea la carne a fuego muy alto, en tandas pequeñas.",
+     "timerMinutes": 4
+    },
+    {
+     "text": "Agrega el ajo, la cebolla y el tomate en gajos.",
+     "timerMinutes": 2
+    },
+    {
+     "text": "Añade la salsa de soya, las papas y el cilantro. Sirve con arroz."
+    }
+   ]
+  },
+  {
+   "id": "crema_zapallo",
+   "name": "Crema de zapallo",
+   "emoji": "🎃",
+   "description": "Crema suave y ligera, con muy pocas calorías.",
+   "meals": [
+    "almuerzo",
+    "cena"
+   ],
+   "origin": "Casera",
+   "minutes": 35,
+   "difficulty": "Fácil",
+   "servings": 4,
+   "tags": [
+    "vegetariano",
+    "sin_gluten",
+    "economico"
+   ],
+   "nutrition": {
+    "kcal": 180,
+    "protein": 6,
+    "carbs": 28,
+    "fat": 6
+   },
+   "ingredients": [
+    {
+     "id": "zapallo",
+     "qty": 800,
+     "unit": "g",
+     "note": "en cubos"
+    },
+    {
+     "id": "cebolla_blanca",
+     "qty": 1,
+     "unit": "rama"
+    },
+    {
+     "id": "ajo",
+     "qty": 2,
+     "unit": "diente"
+    },
+    {
+     "id": "papa",
+     "qty": 1,
+     "unit": "unidad"
+    },
+    {
+     "id": "leche",
+     "qty": 1,
+     "unit": "taza"
+    },
+    {
+     "id": "mantequilla",
+     "qty": 1,
+     "unit": "cda"
+    },
+    {
+     "id": "agua",
+     "qty": 3,
+     "unit": "taza"
+    },
+    {
+     "id": "sal",
+     "qty": null,
+     "unit": null
+    }
+   ],
+   "steps": [
+    {
+     "text": "Sofríe la cebolla y el ajo en la mantequilla.",
+     "timerMinutes": 3
+    },
+    {
+     "text": "Agrega el zapallo, la papa y el agua. Cocina hasta que estén suaves.",
+     "timerMinutes": 20
+    },
+    {
+     "text": "Licúa todo con la leche hasta que quede cremoso."
+    },
+    {
+     "text": "Vuelve a calentar y ajusta la sal.",
+     "timerMinutes": 3
+    }
+   ]
+  },
+  {
+   "id": "sopa_quinoa",
+   "name": "Sopa de quinoa",
+   "emoji": "🍲",
+   "description": "Sopa andina nutritiva y reconfortante.",
+   "meals": [
+    "almuerzo",
+    "cena"
+   ],
+   "origin": "Ecuador",
+   "minutes": 40,
+   "difficulty": "Fácil",
+   "servings": 4,
+   "tags": [
+    "vegetariano",
+    "sin_gluten",
+    "economico"
+   ],
+   "nutrition": {
+    "kcal": 260,
+    "protein": 11,
+    "carbs": 38,
+    "fat": 7
+   },
+   "ingredients": [
+    {
+     "id": "quinoa",
+     "qty": 0.5,
+     "unit": "taza"
+    },
+    {
+     "id": "papa",
+     "qty": 3,
+     "unit": "unidad"
+    },
+    {
+     "id": "zanahoria",
+     "qty": 1,
+     "unit": "unidad"
+    },
+    {
+     "id": "cebolla_blanca",
+     "qty": 1,
+     "unit": "rama"
+    },
+    {
+     "id": "ajo",
+     "qty": 2,
+     "unit": "diente"
+    },
+    {
+     "id": "leche",
+     "qty": 0.5,
+     "unit": "taza"
+    },
+    {
+     "id": "queso",
+     "qty": 100,
+     "unit": "g"
+    },
+    {
+     "id": "achiote",
+     "qty": 1,
+     "unit": "cdta"
+    },
+    {
+     "id": "cilantro",
+     "qty": 0.25,
+     "unit": "atado"
+    },
+    {
+     "id": "agua",
+     "qty": 1.5,
+     "unit": "l"
+    },
+    {
+     "id": "sal",
+     "qty": null,
+     "unit": null
+    }
+   ],
+   "steps": [
+    {
+     "text": "Lava bien la quinoa."
+    },
+    {
+     "text": "Haz un refrito con cebolla, ajo y achiote.",
+     "timerMinutes": 3
+    },
+    {
+     "text": "Agrega el agua, la quinoa, la zanahoria y las papas en cubos.",
+     "timerMinutes": 25
+    },
+    {
+     "text": "Añade la leche y el queso en cubos. Sirve con cilantro."
+    }
+   ]
+  },
+  {
+   "id": "caldo_pollo",
+   "name": "Caldo de pollo con verduras",
+   "emoji": "🍜",
+   "description": "El caldo de la abuela: reconfortante y muy completo.",
+   "meals": [
+    "almuerzo",
+    "cena"
+   ],
+   "origin": "Casera",
+   "minutes": 50,
+   "difficulty": "Fácil",
+   "servings": 6,
+   "tags": [
+    "sin_gluten",
+    "economico"
+   ],
+   "nutrition": {
+    "kcal": 320,
+    "protein": 28,
+    "carbs": 30,
+    "fat": 9
+   },
+   "ingredients": [
+    {
+     "id": "pollo",
+     "qty": 1,
+     "unit": "kg"
+    },
+    {
+     "id": "papa",
+     "qty": 4,
+     "unit": "unidad"
+    },
+    {
+     "id": "zanahoria",
+     "qty": 2,
+     "unit": "unidad"
+    },
+    {
+     "id": "choclo",
+     "qty": 2,
+     "unit": "unidad",
+     "note": "en trozos"
+    },
+    {
+     "id": "cebolla_blanca",
+     "qty": 2,
+     "unit": "rama"
+    },
+    {
+     "id": "ajo",
+     "qty": 3,
+     "unit": "diente"
+    },
+    {
+     "id": "cilantro",
+     "qty": 0.5,
+     "unit": "atado"
+    },
+    {
+     "id": "comino",
+     "qty": 0.5,
+     "unit": "cdta"
+    },
+    {
+     "id": "agua",
+     "qty": 3,
+     "unit": "l"
+    },
+    {
+     "id": "sal",
+     "qty": null,
+     "unit": null
+    }
+   ],
+   "steps": [
+    {
+     "text": "Cocina el pollo en el agua con cebolla, ajo, comino y sal.",
+     "timerMinutes": 25
+    },
+    {
+     "text": "Agrega las papas, la zanahoria y el choclo.",
+     "timerMinutes": 20
+    },
+    {
+     "text": "Ajusta la sal y sirve con cilantro picado."
+    }
+   ]
+  },
+  {
+   "id": "tortilla_papa",
+   "name": "Tortilla de papa y espinaca",
+   "emoji": "🥘",
+   "description": "Tortilla jugosa con papa, verduras y huevo.",
+   "meals": [
+    "cena"
+   ],
+   "origin": "Casera",
+   "minutes": 35,
+   "difficulty": "Media",
+   "servings": 4,
+   "tags": [
+    "vegetariano",
+    "sin_gluten",
+    "economico"
+   ],
+   "nutrition": {
+    "kcal": 290,
+    "protein": 13,
+    "carbs": 22,
+    "fat": 17
+   },
+   "ingredients": [
+    {
+     "id": "huevo",
+     "qty": 6,
+     "unit": "unidad"
+    },
+    {
+     "id": "papa",
+     "qty": 3,
+     "unit": "unidad",
+     "note": "en láminas finas"
+    },
+    {
+     "id": "cebolla_paitena",
+     "qty": 1,
+     "unit": "unidad"
+    },
+    {
+     "id": "pimiento",
+     "qty": 0.5,
+     "unit": "unidad"
+    },
+    {
+     "id": "espinaca",
+     "qty": 1,
+     "unit": "taza"
+    },
+    {
+     "id": "aceite",
+     "qty": 3,
+     "unit": "cda"
+    },
+    {
+     "id": "sal",
+     "qty": null,
+     "unit": null
+    }
+   ],
+   "steps": [
+    {
+     "text": "Cocina las papas y la cebolla en el aceite a fuego bajo hasta que estén tiernas.",
+     "timerMinutes": 15
+    },
+    {
+     "text": "Bate los huevos con sal y mezcla con las papas, el pimiento y la espinaca."
+    },
+    {
+     "text": "Vierte en la sartén y cocina tapado a fuego bajo.",
+     "timerMinutes": 6
+    },
+    {
+     "text": "Voltea con ayuda de un plato y cocina del otro lado.",
+     "timerMinutes": 4
+    }
+   ]
+  },
+  {
+   "id": "tacos_frejol",
+   "name": "Tacos de fréjol y aguacate",
+   "emoji": "🌮",
+   "description": "Tacos vegetarianos, rápidos y llenos de sabor.",
+   "meals": [
+    "almuerzo",
+    "cena"
+   ],
+   "origin": "México",
+   "minutes": 20,
+   "difficulty": "Fácil",
+   "servings": 4,
+   "tags": [
+    "vegetariano",
+    "sin_gluten",
+    "economico"
+   ],
+   "nutrition": {
+    "kcal": 410,
+    "protein": 16,
+    "carbs": 55,
+    "fat": 14
+   },
+   "ingredients": [
+    {
+     "id": "tortilla",
+     "qty": 8,
+     "unit": "unidad"
+    },
+    {
+     "id": "frejol",
+     "qty": 2,
+     "unit": "taza"
+    },
+    {
+     "id": "aguacate",
+     "qty": 1,
+     "unit": "unidad"
+    },
+    {
+     "id": "tomate",
+     "qty": 2,
+     "unit": "unidad"
+    },
+    {
+     "id": "cebolla_paitena",
+     "qty": 0.5,
+     "unit": "unidad"
+    },
+    {
+     "id": "lechuga",
+     "qty": 0.25,
+     "unit": "unidad"
+    },
+    {
+     "id": "limon",
+     "qty": 1,
+     "unit": "unidad"
+    },
+    {
+     "id": "comino",
+     "qty": 0.5,
+     "unit": "cdta"
+    },
+    {
+     "id": "queso",
+     "qty": 100,
+     "unit": "g"
+    },
+    {
+     "id": "sal",
+     "qty": null,
+     "unit": null
+    }
+   ],
+   "steps": [
+    {
+     "text": "Calienta el fréjol con comino y sal, y aplástalo un poco.",
+     "timerMinutes": 5
+    },
+    {
+     "text": "Prepara una salsa con tomate y cebolla picados, limón y sal."
+    },
+    {
+     "text": "Calienta las tortillas en un sartén seco.",
+     "timerMinutes": 2
+    },
+    {
+     "text": "Rellena con fréjol, lechuga, aguacate, la salsa y queso desmenuzado."
+    }
+   ]
+  },
+  {
+   "id": "ensalada_atun",
+   "name": "Ensalada de atún",
+   "emoji": "🥗",
+   "description": "Lista en 10 minutos, saciante y con mucha proteína.",
+   "meals": [
+    "almuerzo",
+    "cena"
+   ],
+   "origin": "Casera",
+   "minutes": 10,
+   "difficulty": "Fácil",
+   "servings": 2,
+   "tags": [
+    "sin_gluten",
+    "economico"
+   ],
+   "nutrition": {
+    "kcal": 300,
+    "protein": 30,
+    "carbs": 12,
+    "fat": 14
+   },
+   "ingredients": [
+    {
+     "id": "atun_lata",
+     "qty": 2,
+     "unit": "lata",
+     "note": "escurrido"
+    },
+    {
+     "id": "lechuga",
+     "qty": 0.5,
+     "unit": "unidad"
+    },
+    {
+     "id": "tomate",
+     "qty": 1,
+     "unit": "unidad"
+    },
+    {
+     "id": "pepino",
+     "qty": 0.5,
+     "unit": "unidad"
+    },
+    {
+     "id": "choclo",
+     "qty": 0.5,
+     "unit": "taza"
+    },
+    {
+     "id": "huevo",
+     "qty": 2,
+     "unit": "unidad"
+    },
+    {
+     "id": "limon",
+     "qty": 1,
+     "unit": "unidad"
+    },
+    {
+     "id": "aceite",
+     "qty": 1,
+     "unit": "cda"
+    },
+    {
+     "id": "sal",
+     "qty": null,
+     "unit": null
+    }
+   ],
+   "steps": [
+    {
+     "text": "Cocina los huevos en agua hirviendo para que queden duros.",
+     "timerMinutes": 10
+    },
+    {
+     "text": "Pica la lechuga, el tomate y el pepino."
+    },
+    {
+     "text": "Mezcla con el atún, el choclo y los huevos en cuartos."
+    },
+    {
+     "text": "Aliña con limón, aceite y sal."
+    }
+   ]
+  },
+  {
+   "id": "omelette_espinaca",
+   "name": "Omelette de espinaca y queso",
+   "emoji": "🍳",
+   "description": "Tortilla francesa rellena, rápida y alta en proteína.",
+   "meals": [
+    "cena",
+    "desayuno"
+   ],
+   "origin": "Casera",
+   "minutes": 10,
+   "difficulty": "Fácil",
+   "servings": 1,
+   "tags": [
+    "vegetariano",
+    "sin_gluten"
+   ],
+   "nutrition": {
+    "kcal": 330,
+    "protein": 25,
+    "carbs": 5,
+    "fat": 23
+   },
+   "ingredients": [
+    {
+     "id": "huevo",
+     "qty": 3,
+     "unit": "unidad"
+    },
+    {
+     "id": "espinaca",
+     "qty": 1,
+     "unit": "taza"
+    },
+    {
+     "id": "queso",
+     "qty": 30,
+     "unit": "g"
+    },
+    {
+     "id": "tomate",
+     "qty": 0.5,
+     "unit": "unidad"
+    },
+    {
+     "id": "aceite",
+     "qty": 1,
+     "unit": "cdta"
+    },
+    {
+     "id": "sal",
+     "qty": null,
+     "unit": null
+    }
+   ],
+   "steps": [
+    {
+     "text": "Bate los huevos con sal."
+    },
+    {
+     "text": "Saltea la espinaca un minuto en la sartén con el aceite.",
+     "timerMinutes": 1
+    },
+    {
+     "text": "Vierte los huevos, y cuando estén casi cuajados agrega el queso y el tomate.",
+     "timerMinutes": 3
+    },
+    {
+     "text": "Dobla el omelette por la mitad y sirve."
+    }
+   ]
+  },
+  {
+   "id": "sanduche_pollo",
+   "name": "Sánduche de pollo",
+   "emoji": "🥪",
+   "description": "Sánduche fresco con salsa de yogur en vez de mayonesa.",
+   "meals": [
+    "cena"
+   ],
+   "origin": "Casera",
+   "minutes": 15,
+   "difficulty": "Fácil",
+   "servings": 2,
+   "tags": [
+    "economico"
+   ],
+   "nutrition": {
+    "kcal": 360,
+    "protein": 30,
+    "carbs": 34,
+    "fat": 9
+   },
+   "ingredients": [
+    {
+     "id": "pan",
+     "qty": 4,
+     "unit": "rebanada"
+    },
+    {
+     "id": "pechuga",
+     "qty": 200,
+     "unit": "g",
+     "note": "cocida y desmenuzada"
+    },
+    {
+     "id": "lechuga",
+     "qty": 2,
+     "unit": "hoja"
+    },
+    {
+     "id": "tomate",
+     "qty": 1,
+     "unit": "unidad"
+    },
+    {
+     "id": "yogur",
+     "qty": 3,
+     "unit": "cda"
+    },
+    {
+     "id": "limon",
+     "qty": 0.5,
+     "unit": "unidad"
+    },
+    {
+     "id": "sal",
+     "qty": null,
+     "unit": null
+    },
+    {
+     "id": "pimienta",
+     "qty": null,
+     "unit": null
+    }
+   ],
+   "steps": [
+    {
+     "text": "Mezcla el pollo con el yogur, el limón, sal y pimienta."
+    },
+    {
+     "text": "Tuesta el pan si lo prefieres."
+    },
+    {
+     "text": "Arma los sánduches con lechuga, tomate y el pollo."
+    }
+   ]
+  },
+  {
+   "id": "crema_brocoli",
+   "name": "Crema de brócoli",
+   "emoji": "🥦",
+   "description": "Cena liviana y caliente, con mucha verdura.",
+   "meals": [
+    "cena"
+   ],
+   "origin": "Casera",
+   "minutes": 25,
+   "difficulty": "Fácil",
+   "servings": 4,
+   "tags": [
+    "vegetariano",
+    "sin_gluten"
+   ],
+   "nutrition": {
+    "kcal": 170,
+    "protein": 9,
+    "carbs": 20,
+    "fat": 6
+   },
+   "ingredients": [
+    {
+     "id": "brocoli",
+     "qty": 2,
+     "unit": "unidad"
+    },
+    {
+     "id": "papa",
+     "qty": 1,
+     "unit": "unidad"
+    },
+    {
+     "id": "cebolla_blanca",
+     "qty": 1,
+     "unit": "rama"
+    },
+    {
+     "id": "ajo",
+     "qty": 2,
+     "unit": "diente"
+    },
+    {
+     "id": "leche",
+     "qty": 1,
+     "unit": "taza"
+    },
+    {
+     "id": "queso",
+     "qty": 80,
+     "unit": "g"
+    },
+    {
+     "id": "agua",
+     "qty": 3,
+     "unit": "taza"
+    },
+    {
+     "id": "sal",
+     "qty": null,
+     "unit": null
+    },
+    {
+     "id": "aceite",
+     "qty": 1,
+     "unit": "cda"
+    }
+   ],
+   "steps": [
+    {
+     "text": "Sofríe la cebolla y el ajo en el aceite.",
+     "timerMinutes": 3
+    },
+    {
+     "text": "Agrega el brócoli, la papa y el agua, y cocina.",
+     "timerMinutes": 15
+    },
+    {
+     "text": "Licúa con la leche y el queso hasta que quede cremoso."
+    },
+    {
+     "text": "Calienta de nuevo y ajusta la sal."
+    }
+   ]
+  },
+  {
+   "id": "yogur_granola",
+   "name": "Yogur con frutas y granola",
+   "emoji": "🍓",
+   "description": "Snack fresco y crocante, también sirve de desayuno.",
+   "meals": [
+    "snack",
+    "desayuno"
+   ],
+   "origin": "Casera",
+   "minutes": 5,
+   "difficulty": "Fácil",
+   "servings": 1,
+   "tags": [
+    "vegetariano"
+   ],
+   "nutrition": {
+    "kcal": 260,
+    "protein": 11,
+    "carbs": 38,
+    "fat": 7
+   },
+   "ingredients": [
+    {
+     "id": "yogur",
+     "qty": 200,
+     "unit": "g"
+    },
+    {
+     "id": "granola",
+     "qty": 3,
+     "unit": "cda"
+    },
+    {
+     "id": "frutilla",
+     "qty": 4,
+     "unit": "unidad"
+    },
+    {
+     "id": "miel",
+     "qty": 1,
+     "unit": "cdta"
+    }
+   ],
+   "steps": [
+    {
+     "text": "Sirve el yogur en un vaso o tazón."
+    },
+    {
+     "text": "Agrega las frutillas picadas, la granola y la miel."
+    }
+   ]
+  },
+  {
+   "id": "hummus",
+   "name": "Hummus con palitos de zanahoria",
+   "emoji": "🥕",
+   "description": "Dip cremoso de garbanzo, con maní en vez de tahini.",
+   "meals": [
+    "snack"
+   ],
+   "origin": "Medio Oriente",
+   "minutes": 15,
+   "difficulty": "Fácil",
+   "servings": 4,
+   "tags": [
+    "vegetariano",
+    "sin_gluten",
+    "economico"
+   ],
+   "nutrition": {
+    "kcal": 210,
+    "protein": 8,
+    "carbs": 22,
+    "fat": 10
+   },
+   "ingredients": [
+    {
+     "id": "garbanzo",
+     "qty": 2,
+     "unit": "taza"
+    },
+    {
+     "id": "limon",
+     "qty": 1,
+     "unit": "unidad"
+    },
+    {
+     "id": "ajo",
+     "qty": 1,
+     "unit": "diente"
+    },
+    {
+     "id": "mani",
+     "qty": 2,
+     "unit": "cda"
+    },
+    {
+     "id": "aceite",
+     "qty": 2,
+     "unit": "cda"
+    },
+    {
+     "id": "comino",
+     "qty": 0.5,
+     "unit": "cdta"
+    },
+    {
+     "id": "zanahoria",
+     "qty": 3,
+     "unit": "unidad",
+     "note": "en palitos"
+    },
+    {
+     "id": "agua",
+     "qty": null,
+     "unit": null
+    },
+    {
+     "id": "sal",
+     "qty": null,
+     "unit": null
+    }
+   ],
+   "steps": [
+    {
+     "text": "Licúa el garbanzo, el limón, el ajo, el maní, el comino y la sal."
+    },
+    {
+     "text": "Agrega el aceite y agua poco a poco hasta que quede cremoso."
+    },
+    {
+     "text": "Sirve con los palitos de zanahoria."
+    }
+   ]
+  },
+  {
+   "id": "manzana_mani",
+   "name": "Manzana con mantequilla de maní",
+   "emoji": "🍎",
+   "description": "El snack más fácil: dulce, crocante y saciante.",
+   "meals": [
+    "snack"
+   ],
+   "origin": "Casera",
+   "minutes": 3,
+   "difficulty": "Fácil",
+   "servings": 1,
+   "tags": [
+    "vegetariano",
+    "sin_gluten",
+    "economico"
+   ],
+   "nutrition": {
+    "kcal": 190,
+    "protein": 4,
+    "carbs": 26,
+    "fat": 8
+   },
+   "ingredients": [
+    {
+     "id": "manzana",
+     "qty": 1,
+     "unit": "unidad"
+    },
+    {
+     "id": "mani",
+     "qty": 1,
+     "unit": "cda"
+    }
+   ],
+   "steps": [
+    {
+     "text": "Corta la manzana en gajos y sírvela con la mantequilla de maní para untar."
+    }
+   ]
+  },
+  {
+   "id": "huevos_duros",
+   "name": "Huevos duros con tomate",
+   "emoji": "🥚",
+   "description": "Snack de proteína pura, fácil de llevar.",
+   "meals": [
+    "snack"
+   ],
+   "origin": "Casera",
+   "minutes": 12,
+   "difficulty": "Fácil",
+   "servings": 1,
+   "tags": [
+    "vegetariano",
+    "sin_gluten",
+    "economico"
+   ],
+   "nutrition": {
+    "kcal": 160,
+    "protein": 13,
+    "carbs": 3,
+    "fat": 10
+   },
+   "ingredients": [
+    {
+     "id": "huevo",
+     "qty": 2,
+     "unit": "unidad"
+    },
+    {
+     "id": "tomate",
+     "qty": 0.5,
+     "unit": "unidad"
+    },
+    {
+     "id": "sal",
+     "qty": null,
+     "unit": null
+    },
+    {
+     "id": "pimienta",
+     "qty": null,
+     "unit": null
+    },
+    {
+     "id": "agua",
+     "qty": null,
+     "unit": null
+    }
+   ],
+   "steps": [
+    {
+     "text": "Cocina los huevos en agua hirviendo.",
+     "timerMinutes": 10
+    },
+    {
+     "text": "Pásalos a agua fría, pélalos y sírvelos con tomate, sal y pimienta."
+    }
+   ]
+  },
+  {
+   "id": "maduro_queso",
+   "name": "Maduro asado con queso",
+   "emoji": "🍌",
+   "description": "Dulce y salado a la vez. Un clásico ecuatoriano.",
+   "meals": [
+    "snack",
+    "desayuno"
+   ],
+   "origin": "Ecuador",
+   "minutes": 25,
+   "difficulty": "Fácil",
+   "servings": 2,
+   "tags": [
+    "vegetariano",
+    "sin_gluten",
+    "economico"
+   ],
+   "nutrition": {
+    "kcal": 290,
+    "protein": 7,
+    "carbs": 52,
+    "fat": 7
+   },
+   "ingredients": [
+    {
+     "id": "maduro",
+     "qty": 2,
+     "unit": "unidad"
+    },
+    {
+     "id": "queso",
+     "qty": 60,
+     "unit": "g"
+    },
+    {
+     "id": "mantequilla",
+     "qty": 1,
+     "unit": "cdta"
+    }
+   ],
+   "steps": [
+    {
+     "text": "Precalienta el horno a 200 °C o usa una sartén con tapa."
+    },
+    {
+     "text": "Asa los maduros con cáscara, girándolos a la mitad del tiempo.",
+     "timerMinutes": 20
+    },
+    {
+     "text": "Ábrelos a lo largo, unta la mantequilla y rellena con el queso."
+    }
+   ]
+  },
+  {
+   "id": "ensalada_frutas",
+   "name": "Ensalada de frutas",
+   "emoji": "🍉",
+   "description": "Fruta fresca picada con jugo de naranja.",
+   "meals": [
+    "snack",
+    "desayuno"
+   ],
+   "origin": "Casera",
+   "minutes": 10,
+   "difficulty": "Fácil",
+   "servings": 2,
+   "tags": [
+    "vegetariano",
+    "sin_gluten",
+    "economico"
+   ],
+   "nutrition": {
+    "kcal": 140,
+    "protein": 2,
+    "carbs": 34,
+    "fat": 1
+   },
+   "ingredients": [
+    {
+     "id": "guineo",
+     "qty": 1,
+     "unit": "unidad"
+    },
+    {
+     "id": "manzana",
+     "qty": 1,
+     "unit": "unidad"
+    },
+    {
+     "id": "frutilla",
+     "qty": 6,
+     "unit": "unidad"
+    },
+    {
+     "id": "naranja",
+     "qty": 1,
+     "unit": "unidad",
+     "note": "en jugo"
+    }
+   ],
+   "steps": [
+    {
+     "text": "Pica todas las frutas en cubos."
+    },
+    {
+     "text": "Mézclalas con el jugo de naranja y sirve frío."
+    }
+   ]
+  }
+ ]
+}
