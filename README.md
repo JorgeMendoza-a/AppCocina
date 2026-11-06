@@ -114,7 +114,7 @@ vegetarianas no lleven carne.
 
 ## Fotos
 
-- **Fotos de los platos:** 29 recetas tienen foto de Wikimedia Commons (en
+- **Fotos de los platos:** 35 recetas tienen foto de Wikimedia Commons (en
   `assets/images/`), con autor y licencia en `recipes.json` (`imageCredit`).
   Las licencias CC BY y CC BY-SA exigen mostrar el crédito: aparece bajo la
   foto y en *Acerca de → Créditos de fotos*. Las recetas sin foto muestran su

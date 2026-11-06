@@ -8,7 +8,7 @@ import '../widgets/recipe_widgets.dart';
 import 'about_screen.dart';
 
 enum QuickFilter {
-  manabi('🌴 Manabí'),
+  manabi('Manabí'),
   rapido('Rápido (≤30 min)'),
   vegetariano('Vegetariano'),
   sinGluten('Sin gluten'),
@@ -164,6 +164,9 @@ class _RecipesScreenState extends State<RecipesScreen> {
                     Padding(
                       padding: const EdgeInsets.only(right: 8),
                       child: FilterChip(
+                        avatar: f == QuickFilter.manabi && !_filters.contains(f)
+                            ? const Text('🌴')
+                            : null,
                         label: Text(f.label),
                         selected: _filters.contains(f),
                         onSelected: (on) => setState(

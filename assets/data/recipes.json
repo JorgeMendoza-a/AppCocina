@@ -3675,7 +3675,13 @@
      "text": "Ajusta la sal, termina con cilantro picado y sirve caliente."
     }
    ],
-   "tip": "Sírvelo con limón, ají y un poco de arroz o maduro frito, como en Manabí."
+   "tip": "Sírvelo con limón, ají y un poco de arroz o maduro frito, como en Manabí.",
+   "image": "assets/images/viche_pescado.jpg",
+   "imageCredit": {
+    "author": "JOJAGAL",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Viche_Chonero.jpg"
+   }
   },
   {
    "id": "cazuela_pescado",
@@ -3923,7 +3929,13 @@
      "timerMinutes": 10
     }
    ],
-   "tip": "Se comen directamente de la hoja. Las hojas de plátano se consiguen en mercados."
+   "tip": "Se comen directamente de la hoja. Las hojas de plátano se consiguen en mercados.",
+   "image": "assets/images/tonga_pollo.jpg",
+   "imageCredit": {
+    "author": "Kevinmero",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Tonga_(gastronom%C3%ADa_Ecuatoriana).jpg"
+   }
   },
   {
    "id": "corviche",
@@ -4039,7 +4051,13 @@
      "timerMinutes": 6
     }
    ],
-   "tip": "Acompáñalos con curtido de cebolla con limón y salsa de maní."
+   "tip": "Acompáñalos con curtido de cebolla con limón y salsa de maní.",
+   "image": "assets/images/corviche.jpg",
+   "imageCredit": {
+    "author": "Kevinmero",
+    "license": "CC BY 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Corviches_ecuatorianos.jpg"
+   }
   },
   {
    "id": "bollo_pescado",
@@ -4153,7 +4171,13 @@
      "text": "Cocina los bollos en una olla tapada con un poco de agua en el fondo, al vapor.",
      "timerMinutes": 40
     }
-   ]
+   ],
+   "image": "assets/images/bollo_pescado.jpg",
+   "imageCredit": {
+    "author": "Montielec98",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Bollo_de_albacora.jpg"
+   }
   },
   {
    "id": "sango_camaron",
@@ -4279,7 +4303,13 @@
     {
      "text": "Termina con cilantro y sirve con arroz blanco."
     }
-   ]
+   ],
+   "image": "assets/images/sango_camaron.jpg",
+   "imageCredit": {
+    "author": "Montielec98",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Sango_de_langostino.jpg"
+   }
   },
   {
    "id": "muchines_yuca",
@@ -4663,7 +4693,13 @@
     {
      "text": "Sirve con cilantro picado."
     }
-   ]
+   ],
+   "image": "assets/images/caldo_bolas_verde.jpg",
+   "imageCredit": {
+    "author": "Aaronmormot",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Caldo_de_bola.jpg"
+   }
   }
  ]
 }

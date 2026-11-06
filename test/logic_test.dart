@@ -29,7 +29,7 @@ void main() {
         expect(r.imageCredit, isNotNull, reason: r.id);
         expect(r.imageCredit!.license, isNotEmpty, reason: r.id);
       }
-      expect(repo.recipes.where((r) => r.image != null).length, 29);
+      expect(repo.recipes.where((r) => r.image != null).length, 35);
     });
 
     test('hay al menos 10 recetas manabas', () {
